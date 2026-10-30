@@ -14,6 +14,8 @@ QUÉ ARCHIVO EDITAR
   jobs/NN-nombre.txt  Un archivo por trabajo (cada uno tiene su propia página)
   projects.txt        Página Proyectos (perfiles, colecciones de Thingiverse, otros repos)
   creations/NN-x.txt  Una página por creación: software, diseños 3D y guías
+  blog.txt            Página Blog (el texto de arriba del listado)
+  blog/slug.txt       Una entrada del blog por archivo (el listado se arma solo)
   courses.txt         Cursos
   certifications.txt  Certificaciones
   events.txt          Eventos
@@ -46,7 +48,8 @@ FORMATO (muy simple)
          en: On 1 January my independent MCT career ends.
 
 6. Los textos son texto normal: escribí & < > y comillas tal cual, sin códigos HTML.
-   Negrita:  **así**       Enlace:  [texto](https://sitio.com)
+   Negrita:  **así**       Cursiva:  *así*       Enlace:  [texto](https://sitio.com)
+   (para un asterisco común escribí \*; un enlace a otra página del sitio es [texto](/blog.html))
 
 QUÉ HACER EN LOS CASOS COMUNES
 ------------------------------
@@ -61,6 +64,20 @@ QUÉ HACER EN LOS CASOS COMUNES
   ponele nombre nuevo (24-mi-diseno.txt) y editalo. "kind" es software, 3d o guide
   y define el grupo y el ícono en la página Proyectos. Los enlaces van en "links:".
   Si varias piezas parecidas van juntas, listalas en "items:" dentro de una sola creación.
+* Agregar una entrada al blog: copiá un archivo de content/blog/ y ponele de nombre
+  la dirección que querés (por ejemplo mi-viaje.txt: la página será /blog/mi-viaje.html).
+  Campos: title, date (AAAA-MM-DD; el listado se ordena por esta fecha), tags (separados
+  por comas, opcional), original (enlace a la entrada en Blogger, opcional) y body.
+  Cada línea "- " de body es un párrafo, con estas variantes:
+      - Un párrafo común, con **negrita**, *cursiva* y [enlaces](https://...).
+      - Un renglón // otro renglón        (" // " parte el renglón dentro del mismo párrafo)
+      - > Una cita                        (líneas seguidas con "> " forman una sola cita)
+      - ## Un subtítulo
+      - ![Descripción de la foto](/assets/blog/mi-viaje/foto1.jpg)
+  Las fotos y documentos van en site/assets/blog/<nombre-de-la-entrada>/ (achicá las fotos
+  a unos 1000 px de ancho). Dos o más fotos seguidas se muestran juntas, como galería.
+  Si un párrafo empieza con algo como "nota:" (una palabra en minúsculas y dos puntos),
+  escribí una barra invertida delante (\nota: ...) para que no se lo tome por un campo.
 * Quitar algo: borrá el ítem completo (sus líneas "- ..." y las sangradas).
 * Agregar una foto a un trabajo: copiá la foto a site/assets/photos/ (achicala antes,
   unos 1200 px de ancho) y agregá un bloque "photos:" como el de 01-att.txt.

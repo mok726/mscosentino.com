@@ -168,3 +168,12 @@ blockquote { margin: 1.4em 0; padding: 4px 0 4px 18px; border-left: 3px solid va
 blockquote cite { display: block; margin-top: 6px; color: var(--muted); font-size: .9rem; font-style: normal; }
 
 .meta-line { color: var(--muted); margin: -.2em 0 .6em; font-size: .95rem; }
+
+/* Blog */
+.post figure { margin: 1.2em 0; }
+.post img { max-width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); display: block; }
+.post .gallery { margin: 1.2em 0; }
+.post .gallery figure { margin: 0; }
+.post blockquote { font-size: 1rem; color: var(--muted); }
+.post blockquote p { margin: 0 0 .6em; }
+.post h2 { margin-top: 1.4em; }

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>windows 7 en mi Tablet · Mariano S. Cosentino</title>
+<meta name="description" content="Hace unos meses me compre una tablet viejita pero linda (Pentium M, 1.5GB RAM, 30GB drive, wireless, bluetooth) para experimentar y usarla como eBook (en mi opinión es…">
+<meta property="og:title" content="Mariano S. Cosentino">
+<meta property="og:description" content="Hace unos meses me compre una tablet viejita pero linda (Pentium M, 1.5GB RAM, 30GB drive, wireless, bluetooth) para experimentar y usarla como eBook (en mi opinión es…">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://mscosentino.com/assets/photo.jpg">
+<meta property="og:url" content="https://mscosentino.com/blog/windows-7-en-mi-tablet.html">
+<link rel="canonical" href="https://mscosentino.com/blog/windows-7-en-mi-tablet.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/site.js"></script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Mariano S. Cosentino</a>
+  <nav class="main" aria-label="Principal"><a href="/"><span lang="es">Inicio</span><span lang="en">Home</span></a><a href="/cv.html"><span lang="es">Experiencia</span><span lang="en">Experience</span></a><a href="/projects.html"><span lang="es">Proyectos</span><span lang="en">Projects</span></a><a href="/blog.html" aria-current="page">Blog</a><a href="/courses.html"><span lang="es">Cursos</span><span lang="en">Courses</span></a><a href="/certifications.html"><span lang="es">Certificaciones</span><span lang="en">Certifications</span></a><a href="/events.html"><span lang="es">Eventos</span><span lang="en">Events</span></a><a href="/scout.html">Scout</a><button id="lang-toggle" class="lang-toggle" type="button" aria-label="Change language / Cambiar idioma">EN</button></nav>
+</div></header>
+<main><div class="wrap">
+<p class="crumb"><a href="/blog.html">← Blog</a></p>
+<h1>windows 7 en mi Tablet</h1>
+<p class="lead"><span lang="es">15 de octubre de 2009</span><span lang="en">October 15, 2009</span></p>
+<p><span class="tag">Windows 7</span><span class="tag">Cosas que aprendí</span></p>
+<p class="meta-line"><span lang="en">This post is in Spanish.</span></p>
+<div class="post"><p>Hace unos meses me compre una tablet viejita pero linda (Pentium M, 1.5GB RAM, 30GB drive, wireless, bluetooth) para experimentar y usarla como eBook (en mi opinión es muchísimo mejor que Kindle, el eReader de Amazon).</p>
+<p>Una de las cosas que quería experimentar son las nuevas funcionalidades de Windows 7, pero la maquina no tiene CD/DVD y yo no tengo ninguna unidad de DVD por USB.</p>
+<p>Había leído hace tiempo que era posible crear una versión de XP que entrara en (y booteara desde) un USB, y me puse a investigar si era posible usar el USB para instalar Windows 7.<br>Tal parece que mi idea no era nada original, ya que me encontré una docena de blogs y artículos describiendo como lo habían logrado.</p>
+<p>Después de leer "<a href="http://www.thinkcomputers.org/index.php?x=articles&amp;id=117">Install Windows 7 From a USB Flash Drive</a>" y "<a href="http://www.tabletpcbuzz.com/archive/index.php?t-36425.html">Windows 7 on LE1600 - Installation from pen drive</a>", me decidí a hacerlo.</p>
+<p>Me baje el Windows 7 Profesional de Microsoft.com y pedí prestado un USB Sony de 5 Gb en el laburo.</p>
+<p>Seguí las instrucciones al pie de la letra, pero cada vez que intente botear, veía que el USB era accedido unas cuantas veces y después la luz quedaba prendida y el display solo mostraba un cursor titilante.<br>Evidentemente era un tema de booteo ... Intente haciendo un <strong>bootsect /nt60</strong>, pero tampoco ayudo ...</p>
+<p>Pensé que quizás la PC fuera muy lenta accediendo a ese USB y que quizás solo fuera un tema de paciencia, ya era la 1 de la mañana, con lo cual me fui a dormir y lo deje trabajando, pero a la mañana siguiente estaba todo tal cual.</p>
+<p>Al día siguiente volví a pedir prestado el USB y decido a volver a intentarlo ...</p>
+<p>Investigando un poco mas encontré que "<a href="http://www.maximumpc.com/article/howtos/how_to_install_windows_7_beta_a_usb_key">How To: Install Windows 7 Beta from a USB Key!</a>" recomendaba formatear el disco como NTFS en lugar de FAT.</p>
+<p>Intente eso, y esta vez el sistema comenzaba a bootear pero después me tiraba un error:</p>
+<p><strong>File: \Boot\BCD</strong><br><strong>Status: 0xc0000001</strong><br><strong>Info: An error occurred while trying to read the boot configuration data</strong></p>
+<p>Lo <a href="http://www.google.com/">GOOGLie</a> y lo <a href="http://www.bing.com/">BINGie</a>, pero no encontré ninguna solución convincente ... decidí volver a intentarlo de cero ... y volvió a fallar (como diría Einstein: “<em>Sólo un tonto hace lo mismo una y otra vez esperando obtener resultados distintos</em>").</p>
+<p>Ahí me acorde que hace unos días, al actualizar el firmware de un sistema del laburo, un proveedor me insistió en no bootear con un USB de más de 2 GB, y supuse que por ahí podía estar el problema.<br>Yo tenía un USB de 2 GB, el tema es que el DVD de instalación de Windows 7 tiene más de 2 GB y por eso ni lo había intentado.</p>
+<p>Decidí hacer la prueba, al menos para poder determinar mejor el problema. Copie todo al disco excepto por un archivo (<strong>\sources\install.wim</strong>), sabía bien que ese archivo es el más importante del proceso de instalación, pero esto era tan solo una prueba para ver si podía bootear.</p>
+<p>Puse el USB, rebootie la tablet, y OH MARAVILLA ! El Setup de Windows 7 comenzó a ejecutarse. Claro que cuando hice click en instalar, el programa se quejo de que no podía hallar aquel archivo.</p>
+<p>OK, un paso adelante y otro nuevo desafío ...</p>
+<p>Conecte el USB de 5 GB (aun tenia la imagen de mis intentos anteriores), e hice click en instalar, el USB de 5 GB no fue accedido ni una vez y la instalación fallo igual que antes ...</p>
+<p>Rebootie el sistema en intente de nuevo. Esta vez, el USB de 5 GB fue leído, pero la instalación fallo igual que antes.</p>
+<p>Encontré una forma de acceder al CMD, y me puse a investigar.</p>
+<p>Mi disco rígido estaba ahí, en el viejo y querido C:, mi USB de 2GB estaba como D: y el de 5GB como E:, el sistema estaba corriendo desde un disco virtual X: (que después determine que estaba basado en la información del <strong>\sources\boot.wim</strong>).</p>
+<p>Como el año pasado creamos las imágenes para las 1200+ Windows vista del laburo me volví bastante conocedor del proceso de instalación de Windows, con lo cual sabia que al programa de instalación se le puede indicar desde donde tomar la información del install.wim.<br>Esta opción es primariamente para que las organizaciones puedan poner el archivo en un servidor centralizado, o para una versión modificada del OS, pero me debería servir.<br>Hasta donde yo recordaba hay dos formas de pasarle esta indicación al programa instalador: por medio de un archivo de instalación desatendida (lo que habíamos hecho en el laburo para las maquinas VISTA), o por medio de un parámetro al ejecutable.</p>
+<p>Como yo no tenía un archivo de instalación desatendida (ni tenía el tiempo ni las ganas de crear uno), decidí usar el parámetro <strong>INSTALLFROM</strong> del exe.</p>
+<p>Una vez más, salí a CMD, y ejecute "<strong>setup.exe /INSTALLFROM:e:\sources\INSTALL.WIM</strong>", el instalador corrió, pero me dio el mismo error que antes, intente unas cuantas variaciones (sin el nombre del archivo, desde distintas locaciones, agregando el directorio al path, etc), pero ninguna funciono.<br>Me puse a revisar el disco virtual X: y navegue hasta el directorio Phanter que, según recordaba de mi experiencia con VISTA, tiene el log y los registros del proceso de instalación.</p>
+<p>Después de un rato de leer esos archivos (algo muy entretenido, más aun cuando se lo hace mediante <strong>TYPE MORE</strong>), me di cuenta de cuál era mi problema: La instalación ya estaba corriendo. Esa ventana de CMD en la que yo trabajaba había sido lanzada desde el instalador y estaba corriendo dentro del ambiente del programa de instalación, con lo cual cada vez que yo ejecutaba el instalador, se reiniciaba el que estaba en memoria y no uno nuevo, era por eso que ignoraba mis parámetros.<br>El programa estaba seteado para encontrar los instaladores en <strong>D:\Sources</strong>, y no había lola.</p>
+<p>Con lo cual tenía dos opciones: crear un archivo de instalación automatizada, o engañar al sistema para que use el USB de 5 GB en lugar del de 2 GB. Ahora bien, yo necesitaba reemplazar un disco existente (el D:) con otro disco (el E:), pero sabía que el disco E: tenía toda la misma información del D:, con lo cual si lo podía reemplazar no debería tener problemas aun cuando el sistema buscara algún archivo.</p>
+<p>Si hubiera tenido acceso al disk manager hubiera cambiado las letras y listo, pero este no era el caso.</p>
+<p>Ahí me acorde de un viejo comando del DOS 3.11 <strong>SUBST</strong> que permite asignar una letra de unidad a un directorio. Era un comando muy útil, allá lejos y hace tiempo cuando jugaba con la PC XT, copiábamos los disquetes con juegos al HD y si algún programa protestaba que no le gustaba ejecutarlo desde un directorio usábamos el SUSBST para hacerle creen que se trataba de un disco verdadero.</p>
+<p>No sabía si el comando seguía existiendo, más aún en la reducida consola de CMD del instalador, pero resulto estar ahí.</p>
+<p>Probé para ver si funcionaria: <strong>SUBST R: E:** se ejecuto sin problemas, y un </strong>DIR R:<strong> me retorno el resultado esperado.<br>Ahora bien, yo sabía que el subst no permite usar la letra de un disco existente, con lo cual necesitaba eliminar el D: para poder reemplazarlo, pero si booteaba sin ese USB estaría en la misma de antes.<br>Ahí recordé que el instalador estaba corriendo en Windows (una versión reducida, pero Windows al fin y al cabo), y ya sabía que el plug-and-play funcionaba (había detectado mi teclado ni bien lo puse) con lo cual, con un poco de suerte si sacaba el USB de 2GB el sistema liberaría la letra correspondiente ... o el sistema se colgaría por completo :-P<br>Cruce los dedos y saque el USB de 2GB ... el sistema siguió funcionando, buena señal :-)<br>ejecute el </strong>SUBST D: E:** y se ejecuto sin problemas, el <strong>DIR</strong> dio el resultado que esperaba, era hora de la prueba máxima: hice click en instalar y aguarde la respiración hasta que el sistema comenzó a instalar alegremente...</p>
+<p>Unos minutos más tarde mi tablet ingresó a la familia de los Windows 7. ¡!!!! :-)</p>
+<p>Lecciones aprendidas:<br>"Retroceder nunca, rendirse jamás"<br>Me llevo 3 días y un montón de intentos, pero finalmente logre lo que quería ¡!!!</p>
+<p>"Aguante el DOS viejo y querido !”<br>La mayor parte de la investigación la hice con comandos re viejos <strong>TYPE</strong> y <strong>MORE</strong>, y la solución fue también un comando viejo <strong>SUBST</strong>.</p></div>
+<p class="links"><a class="btn" href="https://mscosentino.blogspot.com/2009/10/windows-7-en-mi-tablet.html"><span class="ico i-link" aria-hidden="true"></span><span lang="es">Ver la entrada original, con comentarios</span><span lang="en">View the original post, with comments</span></a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+  <div class="social"><a class="soc" data-mail-user="mariano" data-mail-domain="mscosentino.com" href="#" aria-label="Email"><span class="ico i-mail" aria-hidden="true"></span></a><a class="soc" href="https://www.linkedin.com/in/mscosentino" aria-label="LinkedIn"><span class="ico i-linkedin" aria-hidden="true"></span></a><a class="soc" href="https://github.com/mok726" aria-label="GitHub"><span class="ico i-github" aria-hidden="true"></span></a><a class="soc" href="https://www.facebook.com/mscosentino" aria-label="Facebook"><span class="ico i-facebook" aria-hidden="true"></span></a><a class="soc" href="https://x.com/mok726" aria-label="X (personal)"><span class="ico i-x" aria-hidden="true"></span></a><a class="soc" href="https://x.com/MCTArgentina" aria-label="X (MCT Argentina)"><span class="ico i-x" aria-hidden="true"></span><small>MCT</small></a></div>
+  <div>© <span id="year">2026</span> Mariano Sergio Cosentino</div>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+# Entrada importada de «Mi Punto de Vista». Las reglas de edición están en content/LEEME.txt
+
+title: Tivo Redux
+date: 2011-08-25
+tags: Tivo, tivoar
+original: http://mscosentino.blogspot.com/2011/08/tivo-redux.html
+body:
+- ![Imagen 1](/assets/blog/tivo-redux/01-220px-tivo_logo_svg.png)
+- ![Imagen 2](/assets/blog/tivo-redux/02-tivo_l.jpg)
+- Uno de los gadgets que me fascinaron en USA es el TiVo , un aparato que puede ser definido como una Videograbadora sin casettes, pero en realidad, el TiVo es mucho más.
+- ¿Qué les parecería estar viendo TV en vivo y poder pausarla para ir al baño? ¿O rebobinarla para volver a ver algo que se perdieron? TiVo les permite hacer esto y mucho más.
+- Si viven en alguno de los países en los que TiVo CORP tiene actividades, su TiVo se conecta cada noche al servidor de la corporación y descarga toda la guia de programación para las siguientes 2 semanas.
+- ![Imagen 3](/assets/blog/tivo-redux/03-200px-tivothumpsup.jpg)
+- Con esta información este aparato nos permite realizar cosas realmente piolas: olvídense de tener que especificar el canal y la hora para grabar un programa, simplemente naveguen por la guia de programación en pantalla y seleccionen el programa a grabar. O díganle que graba cualquier película con la palabra "starwars" en el título, o todas las comedias con "Ji Carey", y él se encargara de hacerlo automáticamente.
+- ![Imagen 4](/assets/blog/tivo-redux/04-tivo_guide.jpg)
+- El TiVo por dentro
+- ![Imagen 5](/assets/blog/tivo-redux/05-tivo2.jpg)
+- Más allá de la interface con el usuario, el TiVo es una computadora.
+- Tiene un procesador (RISC o MISP, dependiendo del modelo), una interface de video, una fuente de poder, un disco rígido, varios puertos seriales, un modem, algunos modelos incluso tienen puertos USB y puerto de Red. Solo les falta un conector pare teclado!
+- Claro que no es una computadora común y corriente, esta computadora incluye una sintonizador de TV (similar al que tienen las VCR), un codificador MPG (convierte el Video en archivos MPG-2) y un decodificador de MPG (convierte los archivos MPG-2 en video).
+- Una de las limitaciones de estas unidades es el procesador, ya que es algo viejo y lento. Dado que la unidad contiene circuitos dedicados para la manejar la conversión de Audio/Video, no había razón para incluir un procesador más potente (y por lo tanto costoso).
+- Además de almacenar información, el Disco Rígido contiene el sistema operativo (una versión de Linux). Y aquí viene una de las partes más agradables para los fanáticos de la computación. Al usar Linux como OS, TiVo Corp. está obligado a compartir libremente todas las mejoras que haga en el mismo, y eso beneficia grandemente a la comunidad.
+- TiVo ha cumplido bastante ese compromiso (aunque suelen tomarse su tiempo), pero también han abierto un gran debate al reusarse a compartir aquellos programas y librerías que desarrollaron “de cero”; algunos interpretan que toda mejora (incluyendo nuevas librerías que usen librerías existentes) deberían ser compartidas libremente, mientras que otros sostienen que solo las mejoras a elementos existentes deben ser compartidas.
+- Como si esto fuera poco, TiVo Corp. restringe (mediante firmas digitales) el software que puede funcionar en sus equipos, lo cual mucho interpretan que va en contra de las reglas del GNU GPL (el contrato que reglamenta el uso de Linux y otros programas), pero otros interpretan que no.
+- Esto se llama [Tivoization](http://en.wikipedia.org/wiki/Tivoization) y se ha creado un gran debate alrededor del mismo, al punto tal que la Free Software Fundation ha decidió publicar una versión actualizada del GPL, que claramente prohíbe esta actividad.
+- Así pues, TiVo no es un programa único, ReplayTV y el nuevo DirecTV+ son bastante similares, e incluso se puede usar una PC común , agregarle un par de placas de capturadoras de Video y un software especializado (MythTV son algunos de ellos), y se obtiene un producto similar.
+- Pero TiVo fue el primero en tener una presencia masiva en el mercado, y uno de los más simples de usar.
+- Entren los hackers.
+- Como casi todos los productos tecnológicos de los últimos tiempos, pronto se formaron grupos de usuarios tratando de agregar funcionalidad, descubrir opciones ocultas, o simplemente aprender cómo funciona. Así aparecieron varios grupos, los más conocidos son [TiVo Community](http://www.blogger.com/www.tivocommunity.com)(www.tivocommunity.com) y [Deal Database](http://www.dealdatabase.com/)(www.dealdatabase.com) que comenzaron a adaptar aplicaciones comunes de Linux a TiVo, incluyendo el desarrollo de técnicas para evitar las restricciones que TiVo CORP puso para evitar programas externos.
+- Así aparecieron clientes de FTP, lectores de email, RSS, identificadores de llamada, juegos, websites que muestran los programas grabados, e incluso técnicas para pasar los programas grabados del TiVo a una PC.
+- Una de las premisas de las comunidades de "hackers de TiVo " online es que su trabajo no pueda ser usado para sabotear los ingresos de TiVo en los países en los que brinda servicio. Todos coincidimos en que TiVo es un producto magnifico y que si bien no es la única plataforma que hace esto es un sistema claramente innovador. Nadie quiere joderle el negocio a TiVo Corp., y por eso todos nos cuidamos de no brindar información que pueda llevar a alguien a usar el producto sin pagar en los mercados que TiVo cubre.
+- Internacionzación de TiVo
+- Pero TiVo, solo funciona en países en los que tiene servicio, en el resto del mundo un dispositivo TiVo tiene pocas (o ninguna) funcionalidad.
+- Al inicio de sus actividades, TiVo solo proveía servicios en USA (NTSC) y UK (PAL-b).
+- Muchos Canadienses miraban con ganas ese lindo chiche que los usuarios de EEUU podían disfrutar y ellos no. Dado que la norma de TV es la misma (NTSC) y muchos canales también, algunos canadienses comenzaron a experimentar como poder "convencer" a un TiVo para que funcionara en aquel país.
+- Dado que el TiVo corre sobre Linux, fueron capaces de hacer grandes progresos, llegando incluso a desarrollar un emulador del servidor oficial TiVo, de manera que con unos simples cambios un TiVo "yanqui" podía funcionar en Canadá.
+- El sistema extraía la programación de TV de distintos sitios Web (diarios, yahoo, tvguia, etc.) y la formateaba de manera que el TiVo la aceptara.
+- Siguiendo la filosofía de estos grupos, el acceso a estos programas se encontraba fuertemente controlado, pero Viviendo en Argentina, yo tuve la oportunidad de participar del foro (al fin y al cabo, TiVo no tiene cobertura en este país), y me encontré con una cantidad de información realmente impresionante.
+- Lamentablemente, cuando TiVo decidió ofrecer su servicio en Canadá el grupo comenzó a desbandarse, y hace un par de años cerraron sus foros de discusión.
+- Grupos similares surgieron en Australia ([http://www.oztivo.net/](http://www.oztivo.net/)), Nueva Zelanda ([http://www.nztivo.net/](http://www.nztivo.net/)), Sud África ([tivoza.nanfo.com](http://tivoza.nanfo.com/)) , mientras que en otros países solo tuvieron representantes aislados (por ejemplo Javier A. Rodríguez fue uno de los primeros en usar TiVo en [México](http://javier.rodriguez.org.mx/index.php/tivo-in-mexico-howto)).
+- Los australianos fueron de los primero y se encontraron con un desafío adicional, Australia utiliza PAL-I con lo estos dispositivos solo funcionaban con un conversor de norma.
+- Ellos atacaron el problema en dos frentes, unos decidieron reemplazar el sintonizador de TV, mientras que otros intentaron encontrar una solución por software (ya que la documentación del hardware indica que debería ser capaz de manejar otras normas de TV).
+- Finalmente, terminaron implementando una solución mixta, reemplazaron el sintonizador original con otro (común en las video casseteras de ese país) y desarrollaron un programa que intercepta las llamadas al sintonizador original y las convierte en llamadas compatibles con el nuevo y maneja correctamente las frecuencias locales.
+- Una vez solucionado el problema de la norma de TV, se concentraron en como importar la programación de Tv al TiVo.
+- Ellos también tomaron los programas desarrollados por sus pares Canadiense y comenzaron a desarrollar sobre ellos. Hoy día, Australia, Sud África, Nueva Zelanda y varios otros, tienen una infraestructura que no solo proveen la programación en formato TiVo, sino también en el formato estandarizado XMLTV (mas sobre esto en unos días) para que pueda ser usada en otros programas.
+- Es un verdadero esfuerzo comunitario, donde los miembros pueden corregir y actualizar la información de manera tal que con cada iteración se vuelve más completa y exacta. Y claro está, es completamente GRATIS.
+- Recientemente TiVo ha extendido su servicio a varios de estos paises, pero solo para los ultimos modelos, con lo cual estas comunidades siguen vivas y pujantes dando soporte a los modelos viejos.
+- Acá se termina la historia … ¿a qué viene todo esto?: my pronto les cuento :-)

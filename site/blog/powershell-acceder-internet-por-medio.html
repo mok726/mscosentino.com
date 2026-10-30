@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>POWERSHELL: Acceder a internet por medio de un Proxy · Mariano S. Cosentino</title>
+<meta name="description" content="Hoy necesitaba hacer funcionar este script detrás de un proxy, algo que me había sucedido en el pasado y que no había logrado solucionar. Bueno, hoy lo saque andando y…">
+<meta property="og:title" content="Mariano S. Cosentino">
+<meta property="og:description" content="Hoy necesitaba hacer funcionar este script detrás de un proxy, algo que me había sucedido en el pasado y que no había logrado solucionar. Bueno, hoy lo saque andando y…">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://mscosentino.com/assets/photo.jpg">
+<meta property="og:url" content="https://mscosentino.com/blog/powershell-acceder-internet-por-medio.html">
+<link rel="canonical" href="https://mscosentino.com/blog/powershell-acceder-internet-por-medio.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/site.js"></script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Mariano S. Cosentino</a>
+  <nav class="main" aria-label="Principal"><a href="/"><span lang="es">Inicio</span><span lang="en">Home</span></a><a href="/cv.html"><span lang="es">Experiencia</span><span lang="en">Experience</span></a><a href="/projects.html"><span lang="es">Proyectos</span><span lang="en">Projects</span></a><a href="/blog.html" aria-current="page">Blog</a><a href="/courses.html"><span lang="es">Cursos</span><span lang="en">Courses</span></a><a href="/certifications.html"><span lang="es">Certificaciones</span><span lang="en">Certifications</span></a><a href="/events.html"><span lang="es">Eventos</span><span lang="en">Events</span></a><a href="/scout.html">Scout</a><button id="lang-toggle" class="lang-toggle" type="button" aria-label="Change language / Cambiar idioma">EN</button></nav>
+</div></header>
+<main><div class="wrap">
+<p class="crumb"><a href="/blog.html">← Blog</a></p>
+<h1>POWERSHELL: Acceder a internet por medio de un Proxy</h1>
+<p class="lead"><span lang="es">21 de enero de 2011</span><span lang="en">January 21, 2011</span></p>
+<p><span class="tag">Powershell</span></p>
+<p class="meta-line"><span lang="en">This post is in Spanish.</span></p>
+<div class="post"><p>Hoy necesitaba hacer funcionar <a href="http://support.microsoft.com/kb/2292741">este script</a> detrás de un proxy, algo que me había sucedido en el pasado y que no había logrado solucionar.<br>Bueno, hoy lo saque andando y quería compartir las simples modificaciones, en caso de que alguien más este buscando esto.</p>
+<p>Todo lo que necesitan hacer es agregar estas instrucciones antes de bajar los datos desde internet (yo prefiero hacerlo justo después de instanciar el objeto WebClient):</p>
+<p>$proxyObject = new-object System.Net.WebProxy("MiServideProxy", 8080)<br>$proxyObject.BypassProxyOnLocal = $true<br>$proxyObject.Credentials = [System.Net.CredentialCache]::DefaultCredentials<br>[System.Net.GlobalProxySelection]::Select = $proxyObject</p>
+<p>Espero que les sea útil.<br>Saludos, Marianok</p></div>
+<p class="links"><a class="btn" href="https://mscosentino.blogspot.com/2011/01/powershell-acceder-internet-por-medio.html"><span class="ico i-link" aria-hidden="true"></span><span lang="es">Ver la entrada original, con comentarios</span><span lang="en">View the original post, with comments</span></a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+  <div class="social"><a class="soc" data-mail-user="mariano" data-mail-domain="mscosentino.com" href="#" aria-label="Email"><span class="ico i-mail" aria-hidden="true"></span></a><a class="soc" href="https://www.linkedin.com/in/mscosentino" aria-label="LinkedIn"><span class="ico i-linkedin" aria-hidden="true"></span></a><a class="soc" href="https://github.com/mok726" aria-label="GitHub"><span class="ico i-github" aria-hidden="true"></span></a><a class="soc" href="https://www.facebook.com/mscosentino" aria-label="Facebook"><span class="ico i-facebook" aria-hidden="true"></span></a><a class="soc" href="https://x.com/mok726" aria-label="X (personal)"><span class="ico i-x" aria-hidden="true"></span></a><a class="soc" href="https://x.com/MCTArgentina" aria-label="X (MCT Argentina)"><span class="ico i-x" aria-hidden="true"></span><small>MCT</small></a></div>
+  <div>© <span id="year">2026</span> Mariano Sergio Cosentino</div>
+</div></footer>
+</body>
+</html>

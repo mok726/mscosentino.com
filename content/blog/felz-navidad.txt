@@ -1,0 +1,7 @@
+# Entrada importada de «Mi Punto de Vista». Las reglas de edición están en content/LEEME.txt
+
+title: Felíz Navidad
+date: 2008-12-24
+original: http://mscosentino.blogspot.com/2008/12/felz-navidad.html
+body:
+- Hola a todos, Nada Mas que decir en esta entrada, tan solo desearles una muy felíz Navidad a todos ustedes y los suyos.

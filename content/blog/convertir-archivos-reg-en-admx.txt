@@ -1,0 +1,53 @@
+# Entrada importada de «Mi Punto de Vista». Las reglas de edición están en content/LEEME.txt
+
+title: Convertir archivos REG en ADMX
+date: 2010-02-19
+tags: herramientas, Desarrollos, reg2admxl, reg_2_admx
+original: http://mscosentino.blogspot.com/2010/02/convertir-archivos-reg-en-admx.html
+body:
+- Muchas veces necesitamos aplicar archivos .reg con determinados seteos en las registry de nuestros numerosos sistemas (1400+), y la verdad que es un verdadero dolor de cabeza ... especialmente que no nos gusta usar nada que no sea GPO.
+- Cuando son unos pocos valores los agregamos a las políticas en forma manual y listo, pero cuando una aplicación nos requiere aplicar un enorme .REG las cosas se complican bastante y empezamos a improvisar como hacerlo de manera tal de que se aplique a todas las máquinas, que nos queda una constancia de ellos y no volvernos locos ... // Y para peor, al poco tiempo volvemos a la GPO y nos rascamos la cabeza tratando de entender que son todos valores que se están configurando en diferente registry keys. Lo dicho, un verdadero dolor de cabeza
+- Hace un tiempo había intentado crear un archivo de políticas ADM file que nos permitiera aplicar por GPO los valores de un par de archivos .REG que usualmente nos dan trabajo, pero la complejidad de los ADM que encontré, sumado a la falta de documentación, me hicieron abandonar la idea.
+- El fin de semana pasado me puse a pensar en esto nuevamente y decidí intentarlo nuevamente. Claro que no quería ponerme a trabajar con estándares viejos, así que me puse a investigar los ADMX/ADML. // Cuando abrí los distintos archivos ADMX que tenía a mano me di cuenta de que son bastante simple de entender, así que me baje el paquete de ejemplos ADMX y la definición del esquema y sintaxis de ADMX del sitio de MS.
+- Por suerte, la sintaxis de los ADMX es realmente simple, están basado en XML, y el poco rato me di cuenta de que no solo podía crear el archivo ADMX que necesitaba, sino qué también podía crear una utilidad para que leyera cualquier .REG y creara el ADMX correspondiente.
+- Me llevo todo el fin de semana, pero para las 2 de la Mañana del Lunes tenía la aplicación funcionando (y debugueada).
+- Como no tenía ninguna herramienta de desarrollo instalada, decidí escribir la utilidad en el viejo y querido VBScript. Esto tiene el beneficio adicional de que cualquiera lo puede leer y modificar sin necesitar ningún compilador o ambiente de desarrollo.
+- **Que hace** // Lee un archivo de registry (.reg) y crea los archivos ADMX y ADML correspondientes para permitir configurar esos mismos valores por medio de GPO.
+- Debido a que es necesario definir los objetos del GUI (usados para la edición de políticas en el GPMC), la herramienta asume ciertas cosas: // a) el "nombre" del valor también es usado como etiqueta para la interfaces. // b) a todos los valores tipo dword se les asigna un textbox numérico para el ingreso de datos // c) Cualquier otro tipo de valor es tratado como una cadena (strings) y se le asigna un textbox para el ingreso de datos.
+- **Problemas** // **@** o **(Default)** // Esta herramienta no maneja correctamente el "@" (es decir el valor Default de un KEY). Este es el valor que en el editor de registro es mostrado como (Default). // La causa de esto es que no he logrado encontrar la sintaxis correcta para definir este type de valores en el ADMX/L.
+- *PARCHE*: POR AHORA, la aplicación asigna el nombre de valor "(Default)", pero (como verán en los ejemplos que siguen) Windows no reconoce este "(Default)" como el verdadero "(Default)". // Para poder solucionar esto necesito encontrar algún ADMX que configure esta clase de valores, entonces podría leer el XML para entender como se hace. A menos que alguien me diga donde estoy equivocado.
+- **Hex, Hex(0) ...** // Este es otro caso de cosas que encuentro en archivos .REG pero no encuentro ningún ADMX que configure valores de este tipo. // Nosotros tenemos varios .REG que asignan un valor compuesto de varios pares de valores hexadecimales. Como dije, no he encontrado ninguna política que haga esto. // *PARCHE*: Por ahora, y hasta que aprenda como hacerlo correctamente, la herramienta trata este tipo de valores como una string y le asigna un textbox para editarlo. // Para poder solucionar esto necesito encontrar algún ADMX que configure esta clase de valores, entonces podría leer el XML para entender como se hace. A menos que alguien me diga donde estoy equivocado.
+- **Uso:**
+- > CSCRIPT REG_2_ADMXL.vbs *Archivo-Reg* *lenguaje* [*nombre*]
+- *Archivo-Reg*: el nombre y el path del archivo .reg a convertir. // *lenguaje*: El lenguaje y la cultura que será usada para la creación del ADML, ejemplo: en-US, sp-AR, etc. // *nombre*: El nombre que será mostrado en GPO para esta política. Si se omite de usará "REG_2_ADMXL Generated Policy".
+- Los archivos de salida serán nombrados como el archivo .REG (si el archivo de entrada es myfile.reg, los archivos de salida se llamaran myfile.ADMX y myfile.ADML. // El archivo ADMX será creado en el mismo path que el archivo .REG, mientras que el archivo ADML será creado en un subdirectorio nombrado de acuerdo al lenguaje especificado. // Por ejemplo, si el archivo de entrada es C:\myapp\myfile.reg y el lenguaje es en-US, el archivo ADMX será C:\myAPP\myfile.ADMX y el archivo ADML será C:\myAPP\en-US\myfile.ADMX
+- **EJEMPLO**
+- Para convertir el siguiente archivo de registro
+- > Windows Registry Editor Version 5.000
+- > [HKEY_CURRENT_USER\Software\Marianok\Myapp] // @="default value of the key" // "MyAppName"="SuperApp123" // "MyAppServer"="SomeServer"
+- > [HKEY_CURRENT_USER\Software\Marianok\Myapp\Config] // "bottom"=dword:00000000 // "left"=dword:00000000 // "right"=dword:00000000 // "top"=dword:00000000 // "color"="red"
+- **Ejecute el siguiente comando:**
+- > CSCRIPT REG_2_ADMXL.vbs c:\temp\myregfile.reg en-us
+- (El último parámetro indica que uso cultura US y lenguaje Ingles)
+- La herramienta genero 2 archivos c:\temp\myregfile.ADMX y c:\temp\en-us\myregfile.ADML
+- Una vez que tenemos los archivos ADMX y ADML podemos usar el Group Policy Management Console para editar las GPOs más cómodamente.
+- Las siguientes 4 imágenes muestran la política de testeo creada en base al archivo .REG mostrado anteriormente
+- ![Imagen 1](/assets/blog/convertir-archivos-reg-en-admx/01-gpme1.jpg)
+- Note que las diferentes keys (el path en la registry) se convirtieron en nodos del árbol, y que el KEY "Config" esta correctamente subordinado al KEY "MyApp".
+- Noten también que, para ayudar a la gente que pueda estar editando estas políticas, la herramienta ha agregado una descripción a cada nodo, detallando que KEYs esto afecta.
+- ![Imagen 2](/assets/blog/convertir-archivos-reg-en-admx/02-gpme2.jpg)
+- Aquí se ha seleccionado uno de los valores para poder ver el detalle. // Note que el "@" del archivo .REG aparece aquí como (Default), pero este no es el (Default) de Windows :-(. // Noten también que la herramienta ha agregado en cada valor un comentario detallando que registry value modifica, el tipo de valor reportado en él .REG, y cuál era el valor que él .REG asignaba.
+- ![Imagen 3](/assets/blog/convertir-archivos-reg-en-admx/03-gpme3.jpg)
+- Vemos ahora el nodo MYAPP\CONFIG. // Note que hay 4 valores, pero solo 3 están habilitados (solo estos 3 serán aplicados a los usuarios/computadoras).
+- ![Imagen 4](/assets/blog/convertir-archivos-reg-en-admx/04-gpme4.jpg)
+- Aquí se ve la edición de uno de estos valores. // Una vez más, podemos ver la descripción / ayuda que la herramienta ha agregado, para facilitar la tarea del que edita los valores. // Note también que el valor del .REG es usado como valor por defecto para este seteo.
+- Este es el reporte generado por el Group Policy Management
+- ![Imagen 5](/assets/blog/convertir-archivos-reg-en-admx/05-gpm.jpg)
+- Sin duda alguna esto es mucho más legible que la maraña de seteos la seccion CONFIG, esto se debe a que el cuarto valor continua deshabilitado en la GP.
+- Una vez que la GPO se aplicó a la computadora / usuario podemos ver la que el registro fue correctamente actualizado:
+- ![Imagen 6](/assets/blog/convertir-archivos-reg-en-admx/06-re1.jpg)
+- Aquí se puede observar el problema que mencione anteriormente respecto al @ / (Default). El primero de ellos, sin datos asignados, es el "*Default*" de Windows, el otro es el que fue creado por la GPO. // Si se hubiera importado él .reg en esta máquina, solo existiría un "*(DEFAULT)*", el de Windows, y tendría asignado el valor correspondiente ("*default value of the key*").
+- Aquí vemos el nodo de "*Config*", noten que el cuarto valor no se encuentra asignado, tal cual lo esperábamos.
+- WOW, que largo lo de hoy :-) ... les pido disculpas, pero sucede que estaba excitado por lo que logre hacer y quería compartirlo con ustedes.:-)
+- Si quieren probar la aplicación [bájenla de mi sitio](/assets/blog/convertir-archivos-reg-en-admx/reg_2_admx.vbs.txt)
+- Y por favor, si la usan mándenme un email o hagan un comentario aquí así me entero ...

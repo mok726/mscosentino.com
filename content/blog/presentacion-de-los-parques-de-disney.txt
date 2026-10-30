@@ -1,0 +1,11 @@
+# Entrada importada de «Mi Punto de Vista». Las reglas de edición están en content/LEEME.txt
+
+title: Presentacion de los Parques de Disney ...
+date: 2008-12-15
+tags: Disney
+original: http://mscosentino.blogspot.com/2008/12/presentacion-de-los-parques-de-disney.html
+body:
+- En mi vida he visto muchas tácticas de marketing muy ocurrentes, pero nunca había visto una tan buena como esta:
+- *(En la entrada original había acá un video de YouTube incrustado; ya no está disponible.)*
+- Y No, no es que Disney me tenga tan en consideración que hayan decido honrarme de esa manera. Todas las apariciones de mi nombre que ustedes ven esta generadas basado en los datos ingresados en una pagina web. // Bellísima demostración de tecnología, y de ingenio por parte de Disney.
+- Gracias Disney !!!! por mantenernos soñando ...

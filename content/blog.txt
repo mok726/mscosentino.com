@@ -1,0 +1,14 @@
+# PÁGINA "BLOG" (el listado). Las entradas están una por archivo en content/blog/.
+# Las reglas para editar están en content/LEEME.txt
+
+title: Blog
+desc.es: Entradas de Mi Punto de Vista, mi blog personal: viajes, tecnología, familia y opinión.
+desc.en: Posts from Mi Punto de Vista, my personal blog: travel, technology, family and opinion.
+
+heading: Blog
+lead.es: Entradas de “Mi Punto de Vista”, mi blog personal (2008–2011): viajes, tecnología, familia y opinión. Están en español.
+lead.en: Posts from “Mi Punto de Vista”, my personal blog (2008–2011): travel, technology, family and opinion. They are in Spanish.
+
+source_url: https://mscosentino.blogspot.com/
+source_text.es: Mi Punto de Vista en Blogger
+source_text.en: Mi Punto de Vista on Blogger

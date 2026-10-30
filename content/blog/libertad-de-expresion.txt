@@ -1,0 +1,12 @@
+# Entrada importada de «Mi Punto de Vista». Las reglas de edición están en content/LEEME.txt
+
+title: Libertad de expresion
+date: 2009-06-24
+tags: Política, KKK
+original: http://mscosentino.blogspot.com/2009/06/libertad-de-expresion.html
+body:
+- Hoy, por casualidad, encontré una foto con la que me sentí identificado:
+- ![Imagen 1](/assets/blog/libertad-de-expresion/01-cristinaaa_ywm9.jpg)
+- Felicitaciones a los que inventaron la frase e hicieron este cartel (la foto la encontré [acá](http://www.taringa.net/posts/offtopic/1867056/01250151321134.html)), y espero que no les moleste que me haga mi propia variante:
+- "San Martín con 1 caballos liberó 3 paises,
+- el pinguino con su yegua destruyó la Argentina"

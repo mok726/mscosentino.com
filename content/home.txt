@@ -68,6 +68,8 @@ card_cv.es: Trabajos, estudios y reconocimientos.
 card_cv.en: Jobs, education and recognitions.
 card_projects.es: Fogata de Recursos, diseños 3D, herramientas y guías.
 card_projects.en: Fogata de Recursos, 3D designs, tools and guides.
+card_blog.es: Viajes, tecnología y opinión, de mi blog personal.
+card_blog.en: Travel, technology and opinion, from my personal blog.
 card_courses.es: Cursos y seminarios que hice.
 card_courses.en: Courses and seminars I took.
 card_certs.es: Credenciales Microsoft.

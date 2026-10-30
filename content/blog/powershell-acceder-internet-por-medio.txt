@@ -1,0 +1,11 @@
+# Entrada importada de «Mi Punto de Vista». Las reglas de edición están en content/LEEME.txt
+
+title: POWERSHELL: Acceder a internet por medio de un Proxy
+date: 2011-01-21
+tags: Powershell
+original: http://mscosentino.blogspot.com/2011/01/powershell-acceder-internet-por-medio.html
+body:
+- Hoy necesitaba hacer funcionar [este script](http://support.microsoft.com/kb/2292741) detrás de un proxy, algo que me había sucedido en el pasado y que no había logrado solucionar. // Bueno, hoy lo saque andando y quería compartir las simples modificaciones, en caso de que alguien más este buscando esto.
+- Todo lo que necesitan hacer es agregar estas instrucciones antes de bajar los datos desde internet (yo prefiero hacerlo justo después de instanciar el objeto WebClient):
+- $proxyObject = new-object System.Net.WebProxy("MiServideProxy", 8080) // $proxyObject.BypassProxyOnLocal = $true // $proxyObject.Credentials = [System.Net.CredentialCache]::DefaultCredentials // [System.Net.GlobalProxySelection]::Select = $proxyObject
+- Espero que les sea útil. // Saludos, Marianok

@@ -1,0 +1,7 @@
+# Entrada importada de «Mi Punto de Vista». Las reglas de edición están en content/LEEME.txt
+
+title: Noche de Brujas ...
+date: 2010-10-31
+original: http://mscosentino.blogspot.com/2010/10/noche-de-brujas.html
+body:
+- ![Imagen 1](/assets/blog/noche-de-brujas/01-pa300002.jpg)

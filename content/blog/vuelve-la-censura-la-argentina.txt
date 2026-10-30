@@ -1,0 +1,35 @@
+# Entrada importada de «Mi Punto de Vista». Las reglas de edición están en content/LEEME.txt
+
+title: Vuelve la Censura a la Argentina
+date: 2011-08-11
+tags: leakymails, Censura
+original: http://mscosentino.blogspot.com/2011/08/vuelve-la-censura-la-argentina.html
+body:
+- La Republica Argentina ha descendido otro escalón en la escala evolutiva social.
+- Como en los periodos más obscuros de la historia, un juez federal (así con minúsculas) decidió ignorar los principios Constitucionales al ordenar que se censure una serie de publicaciones (en este caso algunos sitios webs).
+- Los sitios que este (tecnológica y constitucionalmente) ignorante juez decidió ocultar son [www.leakymails.com](http://www.leakymails.com) y otros relacionados, que desde hace un tiempo habían comenzado a publicar emails y documentos secretos de los chanchullos ... emmm, digo los curros ... ehhhmmm digo los negociados .... ehhh ... las negociaciones que nuestros políticos, dirigentes, periodistas y jueces llevan a cabo cuando nosotros estamos distraídos con el "fulbol pa' todos", "el bolibol pa' todos" y la "teve pa todos" ... una especie de [www.wikileaks.com](http://www.wikileaks.com) pero para argentinos.
+- Más allá de la BURRADA que significa intentar bloquear un sitio web (algo así como tratar de detener una ola a manos limpias) esto constituye el primer paso de algo que puede convertirse en una herramienta para cercenar aún más nuestros derechos constitucionales.
+- Yo no defiendo a leakymails. Si bien mucho de lo que publican es interesante, hay cosas que no necesariamente nos interesan públicamente, creo que la mejor definición es una que vi en tweeter: "Leakymails es el (Jorge) Rial de la política".
+- Pero eso no le da derecho a NADIE para censurar un sitio web (en todo caso, si ha habido invasión de privacidad, el ofensor deberá resarcir a los afectados), es como cancelar un canal de TV por haber publicado fotos de una actriz "haciéndole el favor" a su amante ...
+- Este juez cruzo la línea de la censura e impulso la creación de un método de filtrado electrónico que puede ser aplicado a cualquier sitio que se les dé la gana.
+- Qué pasa si el día de mañana el gobierno decide escalar la estúpida pelea con los medios y comenzar a filtrar los sitios de todos los medios que no dominan ??? // o si a un juez se le ocurre que Google es malo y ordena censurarlo "preventivamente" ????
+- o cuando se les ocurra que no podemos leer las críticas contra el gobierno que se publican en sitios webs ????
+- No crean que es algo tan delirante, China lo hace desde hace muchos años, Corea del Norte también, Libia y Egipto comenzaron hace unos meses (para que no se difunda el descontento social que se experimentan en esos países), y desde ayer la Argentina tiene el dudoso placer de estar en la misma liga ...
+- Si aun así creen que esto no tiene importancia, les recuerdo el poema/sermón de Martin Niemoeller:
+- > Cuando los nazis vinieron a buscar a los comunistas, // guardé silencio, // porque yo no era comunista,
+- > Cuando encarcelaron a los socialdemócratas, // guardé silencio, // porque yo no era socialdemócrata
+- > Cuando vinieron a buscar a los sindicalistas, // no protesté, // porque yo no era sindicalista,
+- > Cuando vinieron a buscar a los judíos, // no protesté, // porque yo no era judío,
+- > Cuando vinieron a buscarme, // no había nadie más que pudiera protestar.
+- Y como no se puede ocultar el sol con los dedos, les dejo algunos métodos alternativos para acceder a estos mails censurados:
+- [Pagina de Facebook](http://es-la.facebook.com/people/Leakymails-Ong/100002405411884)
+- [el twitter de ellos](http://twitter.com/#!/leakymails)
+- [un sitio espejo](http://www.leakymails.tk)
+- [accesso por proxy (china-proxy.com)](http://www.china-proxy.org/index.php?url=EHFWGQFMEBCYC7GSE3FKELGQEYEGFNE0FIF9ETF2FSCUGFFQGOENDUDYD5DYDJEWC9C1EHFHEXGMGQFOGCGQFCEYFHFTGNE2F4EWFDEJDKELFDERFGFYEUE4GEEJE6F0E0E1EZFPEN)
+- Además, usando el [cache de google](http://webcache.googleusercontent.com/search?q=cache:X6QNZWvrNXsJ:www.leakymails.com/+leakymails&cd=1&hl=en&ct=clnk&source=www.google.com)aún puede leer:
+- [Los emails de la Presi](http://webcache.googleusercontent.com/search?q=cache:m2-c5WUo14QJ:www.leakymails.com/2011/08/parte-11-isidro-bounine-secretario.html+leakymails+cristina+kirchner&cd=2&hl=es&ct=clnk&gl=ar&source=www.google.com.ar)
+- [los del ministro de la corte zaffaroni](http://webcache.googleusercontent.com/search?q=cache:6vonysz8COIJ:www.leakymails.com/2011/06/la-prostitucion-de-la-justicia.html+leakymails+zaffaroni&cd=1&hl=es&ct=clnk&gl=ar&source=www.google.com.ar)
+- y mucho otros más, solo usen el buscador de google con la palabra leakymail y el nombre de quien les interesa.
+- y para esto otros futuros casos de censura de sitios, les dejo una lista de servicios que le permitirán acceder a sitios censurados:
+- http://megaproxy.com.ar/ // http://www.hidemyass.com/ // http://anonymouse.org // http://www.china-proxy.org
+- Saludos, marianok

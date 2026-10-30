@@ -1,0 +1,17 @@
+# Entrada importada de «Mi Punto de Vista». Las reglas de edición están en content/LEEME.txt
+
+title: La Plegaria de un Padre
+date: 2010-10-20
+tags: Familia
+original: http://mscosentino.blogspot.com/2010/10/la-plegaria-de-un-padre.html
+body:
+- Recientemente, gracias a un comentario de un ex-alumno del Liceo Naval Almirante Guillermo Brown, me entere de este poema atribuido al General Douglas MacArthur, y realmente me encata ya que expresa gran parte de lo que siento y deseo.
+- Espero que les guste tanto como a mi:
+- > Plegaria de un Padre
+- > Dame, oh Señor, un hijo que sea lo bastante fuerte para saber cuando es debil, y lo bastante valeroso para enfrentarse consigo mismo cuando sienta miedo;un hijo que sea orgulloso e inflexible en la derrota honrada, y humilde y magnanimo en la victoria.
+- > Dame un hijo que nunca doble la espalda cuando debe erguir el pecho;un hijo que sepa conocerte a Ti...y conocerse a si mismo,que es la piedra fundamental de todo conocimiento.
+- > Conducelo, te lo ruego,no por el camino comodo y facil sino por el camino aspero,aguijoneado por las dificultades y los retos. Alli dejale aprender a sostenerse firme en la tempestad y a sentir compasion por los que fallan.
+- > Dame un hijo cuyo corazon sea claro,cuyos ideales sean altos; un hijo que se domine a si mismo antes que pretenda dominar a los demas;un hijo que aprenda a reir pero que tambien sepa llorar,un hijo que avance hacia el futuro pero que nunca olvide el pasado.
+- > Y despues que le hayas dado todo eso, agregale,te suplico, suficiente sentido del buen humor, de modo que pueda ser siempre serio pero que no se tome a si mismo demasiado en serio.Dale humildad para que pueda recordar siempre la sencillez de la verdadera grandeza,la imparcialidadde la verdadera sabiduria,la mansedumbre de la verdadera fuerza.
+- > Entonces yo,su padre, me atrevere a murmurar: "No he vivido en vano".
+- Esta version traducida se la robe a otro Ex-liceista, Leandro Brito Peret, espero que no le moleste.

@@ -1,0 +1,15 @@
+# Entrada importada de «Mi Punto de Vista». Las reglas de edición están en content/LEEME.txt
+
+title: Estoy en Lausanne
+date: 2009-01-25
+tags: viajes, MSC, Lausanne
+original: http://mscosentino.blogspot.com/2009/01/estoy-en-lausanne.html
+body:
+- ![Imagen 1](/assets/blog/estoy-en-lausanne/01-img00004-20090125-1700-791928.jpg)
+- Hoy escribo desde las orillas del lago ginebra, en la ciudad de Lausanne.
+- Es realmente dificil describir lugares tan lindos como este.
+- Cuando uno camina por las calles de ciudades asi, donde cada paso es cuesta arriba o cuesta abajo, nunca horizontal, uno no puede dejar de plantearse como es que a pesar de las dificultades se las arreglaron para progresar tanto, no solo economica sino tambien socialmente, mientras que al mismo tiempo nuestra querida Argentina, como la mayoria de america latina, esta seriamente estancada en ambos aspectos de su desarrollo (y digo estancada por no decir que esta involucionando).
+- Si, alguno saltara para decirme que este pais es lo que es gracias al dinero que guarda, pero para llegar a eso, para llegar al punto en el que la gente (buena o mala) confiara en este lugar para depositar sus capitales, para llegar a ese punto este pais debio haber hecho un gran trabajo, ya que (mal que nos pese a los argentinos) la confianza no es un derecho, ni es algo que se obtiene por obra y gracia de espiritu santo, la confianza se gana y hay que merecerla.
+- Uyyn me divage mucho !!! Eso me pasa por caminar por horas junto a un lago cristalino, limpio y lleno de vida silvestre :-)
+- Les dejo un cariño a todos.
+- Marianok.

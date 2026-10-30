@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Convertir archivos REG en ADMX · Mariano S. Cosentino</title>
+<meta name="description" content="Muchas veces necesitamos aplicar archivos .reg con determinados seteos en las registry de nuestros numerosos sistemas (1400+), y la verdad que es un verdadero dolor de…">
+<meta property="og:title" content="Mariano S. Cosentino">
+<meta property="og:description" content="Muchas veces necesitamos aplicar archivos .reg con determinados seteos en las registry de nuestros numerosos sistemas (1400+), y la verdad que es un verdadero dolor de…">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://mscosentino.com/assets/photo.jpg">
+<meta property="og:url" content="https://mscosentino.com/blog/convertir-archivos-reg-en-admx.html">
+<link rel="canonical" href="https://mscosentino.com/blog/convertir-archivos-reg-en-admx.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/site.js"></script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Mariano S. Cosentino</a>
+  <nav class="main" aria-label="Principal"><a href="/"><span lang="es">Inicio</span><span lang="en">Home</span></a><a href="/cv.html"><span lang="es">Experiencia</span><span lang="en">Experience</span></a><a href="/projects.html"><span lang="es">Proyectos</span><span lang="en">Projects</span></a><a href="/blog.html" aria-current="page">Blog</a><a href="/courses.html"><span lang="es">Cursos</span><span lang="en">Courses</span></a><a href="/certifications.html"><span lang="es">Certificaciones</span><span lang="en">Certifications</span></a><a href="/events.html"><span lang="es">Eventos</span><span lang="en">Events</span></a><a href="/scout.html">Scout</a><button id="lang-toggle" class="lang-toggle" type="button" aria-label="Change language / Cambiar idioma">EN</button></nav>
+</div></header>
+<main><div class="wrap">
+<p class="crumb"><a href="/blog.html">← Blog</a></p>
+<h1>Convertir archivos REG en ADMX</h1>
+<p class="lead"><span lang="es">19 de febrero de 2010</span><span lang="en">February 19, 2010</span></p>
+<p><span class="tag">herramientas</span><span class="tag">Desarrollos</span><span class="tag">reg2admxl</span><span class="tag">reg_2_admx</span></p>
+<p class="meta-line"><span lang="en">This post is in Spanish.</span></p>
+<div class="post"><p>Muchas veces necesitamos aplicar archivos .reg con determinados seteos en las registry de nuestros numerosos sistemas (1400+), y la verdad que es un verdadero dolor de cabeza ... especialmente que no nos gusta usar nada que no sea GPO.</p>
+<p>Cuando son unos pocos valores los agregamos a las políticas en forma manual y listo, pero cuando una aplicación nos requiere aplicar un enorme .REG las cosas se complican bastante y empezamos a improvisar como hacerlo de manera tal de que se aplique a todas las máquinas, que nos queda una constancia de ellos y no volvernos locos ...<br>Y para peor, al poco tiempo volvemos a la GPO y nos rascamos la cabeza tratando de entender que son todos valores que se están configurando en diferente registry keys. Lo dicho, un verdadero dolor de cabeza</p>
+<p>Hace un tiempo había intentado crear un archivo de políticas ADM file que nos permitiera aplicar por GPO los valores de un par de archivos .REG que usualmente nos dan trabajo, pero la complejidad de los ADM que encontré, sumado a la falta de documentación, me hicieron abandonar la idea.</p>
+<p>El fin de semana pasado me puse a pensar en esto nuevamente y decidí intentarlo nuevamente. Claro que no quería ponerme a trabajar con estándares viejos, así que me puse a investigar los ADMX/ADML.<br>Cuando abrí los distintos archivos ADMX que tenía a mano me di cuenta de que son bastante simple de entender, así que me baje el paquete de ejemplos ADMX y la definición del esquema y sintaxis de ADMX del sitio de MS.</p>
+<p>Por suerte, la sintaxis de los ADMX es realmente simple, están basado en XML, y el poco rato me di cuenta de que no solo podía crear el archivo ADMX que necesitaba, sino qué también podía crear una utilidad para que leyera cualquier .REG y creara el ADMX correspondiente.</p>
+<p>Me llevo todo el fin de semana, pero para las 2 de la Mañana del Lunes tenía la aplicación funcionando (y debugueada).</p>
+<p>Como no tenía ninguna herramienta de desarrollo instalada, decidí escribir la utilidad en el viejo y querido VBScript. Esto tiene el beneficio adicional de que cualquiera lo puede leer y modificar sin necesitar ningún compilador o ambiente de desarrollo.</p>
+<p><strong>Que hace</strong><br>Lee un archivo de registry (.reg) y crea los archivos ADMX y ADML correspondientes para permitir configurar esos mismos valores por medio de GPO.</p>
+<p>Debido a que es necesario definir los objetos del GUI (usados para la edición de políticas en el GPMC), la herramienta asume ciertas cosas:<br>a) el "nombre" del valor también es usado como etiqueta para la interfaces.<br>b) a todos los valores tipo dword se les asigna un textbox numérico para el ingreso de datos<br>c) Cualquier otro tipo de valor es tratado como una cadena (strings) y se le asigna un textbox para el ingreso de datos.</p>
+<p><strong>Problemas</strong><br><strong>@</strong> o <strong>(Default)</strong><br>Esta herramienta no maneja correctamente el "@" (es decir el valor Default de un KEY). Este es el valor que en el editor de registro es mostrado como (Default).<br>La causa de esto es que no he logrado encontrar la sintaxis correcta para definir este type de valores en el ADMX/L.</p>
+<p><em>PARCHE</em>: POR AHORA, la aplicación asigna el nombre de valor "(Default)", pero (como verán en los ejemplos que siguen) Windows no reconoce este "(Default)" como el verdadero "(Default)".<br>Para poder solucionar esto necesito encontrar algún ADMX que configure esta clase de valores, entonces podría leer el XML para entender como se hace. A menos que alguien me diga donde estoy equivocado.</p>
+<p><strong>Hex, Hex(0) ...</strong><br>Este es otro caso de cosas que encuentro en archivos .REG pero no encuentro ningún ADMX que configure valores de este tipo.<br>Nosotros tenemos varios .REG que asignan un valor compuesto de varios pares de valores hexadecimales. Como dije, no he encontrado ninguna política que haga esto.<br><em>PARCHE</em>: Por ahora, y hasta que aprenda como hacerlo correctamente, la herramienta trata este tipo de valores como una string y le asigna un textbox para editarlo.<br>Para poder solucionar esto necesito encontrar algún ADMX que configure esta clase de valores, entonces podría leer el XML para entender como se hace. A menos que alguien me diga donde estoy equivocado.</p>
+<p><strong>Uso:</strong></p>
+<blockquote><p>CSCRIPT REG_2_ADMXL.vbs <em>Archivo-Reg</em> <em>lenguaje</em> [<em>nombre</em>]</p></blockquote>
+<p><em>Archivo-Reg</em>: el nombre y el path del archivo .reg a convertir.<br><em>lenguaje</em>: El lenguaje y la cultura que será usada para la creación del ADML, ejemplo: en-US, sp-AR, etc.<br><em>nombre</em>: El nombre que será mostrado en GPO para esta política. Si se omite de usará "REG_2_ADMXL Generated Policy".</p>
+<p>Los archivos de salida serán nombrados como el archivo .REG (si el archivo de entrada es myfile.reg, los archivos de salida se llamaran myfile.ADMX y myfile.ADML.<br>El archivo ADMX será creado en el mismo path que el archivo .REG, mientras que el archivo ADML será creado en un subdirectorio nombrado de acuerdo al lenguaje especificado.<br>Por ejemplo, si el archivo de entrada es C:\myapp\myfile.reg y el lenguaje es en-US, el archivo ADMX será C:\myAPP\myfile.ADMX y el archivo ADML será C:\myAPP\en-US\myfile.ADMX</p>
+<p><strong>EJEMPLO</strong></p>
+<p>Para convertir el siguiente archivo de registro</p>
+<blockquote><p>Windows Registry Editor Version 5.000</p><p>[HKEY_CURRENT_USER\Software\Marianok\Myapp]<br>@="default value of the key"<br>"MyAppName"="SuperApp123"<br>"MyAppServer"="SomeServer"</p><p>[HKEY_CURRENT_USER\Software\Marianok\Myapp\Config]<br>"bottom"=dword:00000000<br>"left"=dword:00000000<br>"right"=dword:00000000<br>"top"=dword:00000000<br>"color"="red"</p></blockquote>
+<p><strong>Ejecute el siguiente comando:</strong></p>
+<blockquote><p>CSCRIPT REG_2_ADMXL.vbs c:\temp\myregfile.reg en-us</p></blockquote>
+<p>(El último parámetro indica que uso cultura US y lenguaje Ingles)</p>
+<p>La herramienta genero 2 archivos c:\temp\myregfile.ADMX y c:\temp\en-us\myregfile.ADML</p>
+<p>Una vez que tenemos los archivos ADMX y ADML podemos usar el Group Policy Management Console para editar las GPOs más cómodamente.</p>
+<p>Las siguientes 4 imágenes muestran la política de testeo creada en base al archivo .REG mostrado anteriormente</p>
+<figure><img src="/assets/blog/convertir-archivos-reg-en-admx/01-gpme1.jpg" alt="Imagen 1" loading="lazy"></figure>
+<p>Note que las diferentes keys (el path en la registry) se convirtieron en nodos del árbol, y que el KEY "Config" esta correctamente subordinado al KEY "MyApp".</p>
+<p>Noten también que, para ayudar a la gente que pueda estar editando estas políticas, la herramienta ha agregado una descripción a cada nodo, detallando que KEYs esto afecta.</p>
+<figure><img src="/assets/blog/convertir-archivos-reg-en-admx/02-gpme2.jpg" alt="Imagen 2" loading="lazy"></figure>
+<p>Aquí se ha seleccionado uno de los valores para poder ver el detalle.<br>Note que el "@" del archivo .REG aparece aquí como (Default), pero este no es el (Default) de Windows :-(.<br>Noten también que la herramienta ha agregado en cada valor un comentario detallando que registry value modifica, el tipo de valor reportado en él .REG, y cuál era el valor que él .REG asignaba.</p>
+<figure><img src="/assets/blog/convertir-archivos-reg-en-admx/03-gpme3.jpg" alt="Imagen 3" loading="lazy"></figure>
+<p>Vemos ahora el nodo MYAPP\CONFIG.<br>Note que hay 4 valores, pero solo 3 están habilitados (solo estos 3 serán aplicados a los usuarios/computadoras).</p>
+<figure><img src="/assets/blog/convertir-archivos-reg-en-admx/04-gpme4.jpg" alt="Imagen 4" loading="lazy"></figure>
+<p>Aquí se ve la edición de uno de estos valores.<br>Una vez más, podemos ver la descripción / ayuda que la herramienta ha agregado, para facilitar la tarea del que edita los valores.<br>Note también que el valor del .REG es usado como valor por defecto para este seteo.</p>
+<p>Este es el reporte generado por el Group Policy Management</p>
+<figure><img src="/assets/blog/convertir-archivos-reg-en-admx/05-gpm.jpg" alt="Imagen 5" loading="lazy"></figure>
+<p>Sin duda alguna esto es mucho más legible que la maraña de seteos la seccion CONFIG, esto se debe a que el cuarto valor continua deshabilitado en la GP.</p>
+<p>Una vez que la GPO se aplicó a la computadora / usuario podemos ver la que el registro fue correctamente actualizado:</p>
+<figure><img src="/assets/blog/convertir-archivos-reg-en-admx/06-re1.jpg" alt="Imagen 6" loading="lazy"></figure>
+<p>Aquí se puede observar el problema que mencione anteriormente respecto al @ / (Default). El primero de ellos, sin datos asignados, es el "<em>Default</em>" de Windows, el otro es el que fue creado por la GPO.<br>Si se hubiera importado él .reg en esta máquina, solo existiría un "<em>(DEFAULT)</em>", el de Windows, y tendría asignado el valor correspondiente ("<em>default value of the key</em>").</p>
+<p>Aquí vemos el nodo de "<em>Config</em>", noten que el cuarto valor no se encuentra asignado, tal cual lo esperábamos.</p>
+<p>WOW, que largo lo de hoy :-) ... les pido disculpas, pero sucede que estaba excitado por lo que logre hacer y quería compartirlo con ustedes.:-)</p>
+<p>Si quieren probar la aplicación <a href="/assets/blog/convertir-archivos-reg-en-admx/reg_2_admx.vbs.txt">bájenla de mi sitio</a></p>
+<p>Y por favor, si la usan mándenme un email o hagan un comentario aquí así me entero ...</p></div>
+<p class="links"><a class="btn" href="https://mscosentino.blogspot.com/2010/02/convertir-archivos-reg-en-admx.html"><span class="ico i-link" aria-hidden="true"></span><span lang="es">Ver la entrada original, con comentarios</span><span lang="en">View the original post, with comments</span></a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+  <div class="social"><a class="soc" data-mail-user="mariano" data-mail-domain="mscosentino.com" href="#" aria-label="Email"><span class="ico i-mail" aria-hidden="true"></span></a><a class="soc" href="https://www.linkedin.com/in/mscosentino" aria-label="LinkedIn"><span class="ico i-linkedin" aria-hidden="true"></span></a><a class="soc" href="https://github.com/mok726" aria-label="GitHub"><span class="ico i-github" aria-hidden="true"></span></a><a class="soc" href="https://www.facebook.com/mscosentino" aria-label="Facebook"><span class="ico i-facebook" aria-hidden="true"></span></a><a class="soc" href="https://x.com/mok726" aria-label="X (personal)"><span class="ico i-x" aria-hidden="true"></span></a><a class="soc" href="https://x.com/MCTArgentina" aria-label="X (MCT Argentina)"><span class="ico i-x" aria-hidden="true"></span><small>MCT</small></a></div>
+  <div>© <span id="year">2026</span> Mariano Sergio Cosentino</div>
+</div></footer>
+</body>
+</html>

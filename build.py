@@ -109,11 +109,13 @@ def load(path):
 # Texto -> HTML
 # =====================================================================
 def esc(s):
-    """Texto plano -> HTML. **negrita** y [texto](https://enlace) están permitidos."""
+    """Texto plano -> HTML. Permitidos: **negrita**, *cursiva* y [texto](https://enlace o /pagina)."""
     s = s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    s = s.replace("\\*", "\0")  # \* es un asterisco literal
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
-    s = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', s)
-    return s
+    s = re.sub(r"(?<![\w*])\*(?=\S)(.+?)(?<=\S)\*(?![\w*])", r"<em>\1</em>", s)
+    s = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+|/[^)\s]*)\)", r'<a href="\2">\1</a>', s)
+    return s.replace("\0", "*")
 
 
 def T(x):
@@ -170,6 +172,7 @@ NAV = [
     ("/", "index.html", "nav_home"),
     ("/cv.html", "cv.html", "nav_cv"),
     ("/projects.html", "projects.html", "nav_projects"),
+    ("/blog.html", "blog.html", "nav_blog"),
     ("/courses.html", "courses.html", "nav_courses"),
     ("/certifications.html", "certifications.html", "nav_certs"),
     ("/events.html", "events.html", "nav_events"),
@@ -344,6 +347,130 @@ def creation_page(c):
 
 
 # =====================================================================
+# Blog: una página por archivo de content/blog/, en /blog/<slug>.html
+# =====================================================================
+IMG_LINE = re.compile(r"^!\[([^\]]*)\]\((/[^)\s]+)\)$")
+
+
+def load_blog():
+    posts = []
+    folder = os.path.join(CONTENT, "blog")
+    for f in sorted(os.listdir(folder)):
+        if not f.endswith(".txt"):
+            continue
+        p = load(os.path.join(folder, f))
+        p["slug"] = f[:-4]
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", p["date"]):
+            raise SystemExit(f"Error: 'date' en {p.path} debe ser AAAA-MM-DD (dice '{p['date']}')")
+        for item in p["body"]:
+            if not isinstance(item, str):
+                raise SystemExit(f"Error: el cuerpo de {p.path} sólo admite líneas '- texto'")
+        posts.append(p)
+    posts.sort(key=lambda p: p["date"], reverse=True)
+    return posts
+
+
+def blog_date(iso):
+    y, m, d = iso.split("-")
+    out = {}
+    for lg in ("es", "en"):
+        month = ui["months"][int(m) - 1][lg]
+        out[lg] = ui["date_format"][lg].replace("{d}", str(int(d))).replace("{m}", month).replace("{y}", y)
+    return T(out)
+
+
+def blog_tags(p):
+    return "".join(f'<span class="tag">{esc(t.strip())}</span>' for t in get(p, "tags").split(",") if t.strip())
+
+
+def blog_text(t):
+    """Un párrafo. Una '\' al principio es un escape; ' // ' es un salto de línea."""
+    if t.startswith("\\"):
+        t = t[1:]
+    return esc(t).replace(" // ", "<br>")
+
+
+def blog_body(items):
+    out, imgs, quotes = [], [], []
+
+    def flush():
+        nonlocal imgs, quotes
+        if imgs:
+            figs = [f'<figure><img src="{src}" alt="{html.escape(alt)}" loading="lazy"></figure>' for alt, src in imgs]
+            out.append(f'<div class="gallery">{"".join(figs)}</div>' if len(figs) > 1 else figs[0])
+            imgs = []
+        if quotes:
+            out.append("<blockquote>" + "".join(f"<p>{blog_text(q)}</p>" for q in quotes) + "</blockquote>")
+            quotes = []
+
+    for t in items:
+        m = IMG_LINE.match(t)
+        if m:
+            if quotes:
+                flush()
+            imgs.append(m.groups())
+        elif t.startswith("> "):
+            if imgs:
+                flush()
+            quotes.append(t[2:])
+        else:
+            flush()
+            out.append(f"<h2>{esc(t[3:])}</h2>" if t.startswith("## ") else f"<p>{blog_text(t)}</p>")
+    flush()
+    return "\n".join(out)
+
+
+def excerpt(p, size=170):
+    """Primer párrafo de texto, sin marcas, para el listado y la meta description."""
+    for t in p["body"]:
+        if t.startswith(("!", ">", "## ")):
+            continue
+        t = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", t.lstrip("\\"))
+        t = re.sub(r"\*+", "", t).replace(" // ", " ")
+        if len(t) > size:
+            t = t[:size].rsplit(" ", 1)[0].rstrip(" ,.;:") + "…"
+        return t
+    return ""
+
+
+def blog_page(p):
+    parts = [
+        f'<p class="crumb"><a href="/blog.html">← {T(ui["nav_blog"])}</a></p>',
+        f"<h1>{esc(p['title'])}</h1>",
+        f'<p class="lead">{blog_date(p["date"])}</p>',
+    ]
+    if get(p, "tags"):
+        parts.append(f"<p>{blog_tags(p)}</p>")
+    parts.append(f'<p class="meta-line"><span lang="en">{esc(ui["blog_es_only"]["en"])}</span></p>')
+    parts.append(f'<div class="post">{blog_body(p["body"])}</div>')
+    if get(p, "original"):
+        parts.append(
+            '<p class="links">' + btn(p["original"].replace("http://", "https://"), "link", T(ui["blog_original"])) + "</p>"
+        )
+    return "\n".join(parts)
+
+
+def blog_index_body(c, posts):
+    groups, year = "", None
+    for p in posts:
+        if p["date"][:4] != year:
+            year = p["date"][:4]
+            groups += ("</ul>" if groups else "") + f'<h2>{year}</h2><ul class="timeline">'
+        groups += (
+            f'<li><a class="joblink" href="/blog/{p["slug"]}.html"><strong>{esc(p["title"])}</strong>'
+            f'<span class="meta">{blog_date(p["date"])}</span>'
+            f'<span class="meta">{esc(excerpt(p))}</span></a></li>'
+        )
+    groups += "</ul>" if groups else ""
+    return f"""
+<h1>{T(c["heading"])}</h1>
+<p class="lead">{T(c["lead"])}</p>
+<p class="links">{btn(c["source_url"], "link", T(c["source_text"]))}</p>
+{groups}
+"""
+
+
+# =====================================================================
 # Páginas
 # =====================================================================
 def home_body(c):
@@ -380,6 +507,7 @@ def home_body(c):
 <div class="cards">
   {card("/cv.html", "work", T(ui["nav_cv"]), T(c["card_cv"]))}
   {card("/projects.html", "code", T(ui["nav_projects"]), T(c["card_projects"]))}
+  {card("/blog.html", "book", T(ui["nav_blog"]), T(c["card_blog"]))}
   {card("/courses.html", "school", T(ui["nav_courses"]), T(c["card_courses"]))}
   {card("/certifications.html", "verified", T(ui["nav_certs"]), T(c["card_certs"]))}
   {card("/events.html", "event", T(ui["nav_events"]), T(c["card_events"]))}
@@ -534,6 +662,7 @@ PAGES = [
     ("index.html", "home", home_body),
     ("cv.html", "cv", None),
     ("projects.html", "projects", None),
+    ("blog.html", "blog", None),
     ("courses.html", "courses", courses_body),
     ("certifications.html", "certifications", certs_body),
     ("events.html", "events", events_body),
@@ -542,6 +671,8 @@ PAGES = [
 
 jobs = load_jobs()
 creations = load_creations()
+posts = load_blog()
+os.makedirs(os.path.join(OUT, "blog"), exist_ok=True)
 os.makedirs(os.path.join(OUT, "jobs"), exist_ok=True)
 os.makedirs(os.path.join(OUT, "projects"), exist_ok=True)
 for path, name, body_fn in PAGES:
@@ -550,6 +681,8 @@ for path, name, body_fn in PAGES:
         body = cv_body(c, jobs)
     elif name == "projects":
         body = projects_body(c, creations)
+    elif name == "blog":
+        body = blog_index_body(c, posts)
     else:
         body = body_fn(c)
     with open(os.path.join(OUT, path), "w", encoding="utf8") as fh:
@@ -562,4 +695,7 @@ for j in jobs:
 for c in creations:
     with open(os.path.join(OUT, "projects", c["slug"] + ".html"), "w", encoding="utf8") as fh:
         fh.write(page(f"projects/{c['slug']}.html", "projects.html", plain_text(c["title"]), c["summary"], creation_page(c)))
-print("ok", len(PAGES) + len(jobs) + len(creations), "pages")
+for p in posts:
+    with open(os.path.join(OUT, "blog", p["slug"] + ".html"), "w", encoding="utf8") as fh:
+        fh.write(page(f"blog/{p['slug']}.html", "blog.html", p["title"], excerpt(p), blog_page(p)))
+print("ok", len(PAGES) + len(jobs) + len(creations) + len(posts), "pages")
