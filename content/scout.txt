@@ -4,11 +4,11 @@ title: Scout
 desc.es: Voluntariado Scout.
 desc.en: Scout volunteering.
 
-lead.es: Voluntariado en la Comunidad Scout-Guía “San Pablo”, Scouts de Argentina.
-lead.en: Volunteering with the Scout-Guía “San Pablo” community, Scouts de Argentina.
+lead.es: Voluntario en la Comunidad Scout-Guía “San Pablo” (grupo 521, distrito 02, zona 15), Scouts de Argentina.
+lead.en: Volunteering with the Scout-Guía “San Pablo” community (group 521, district 02, zone 15), Scouts de Argentina.
 
-intro.es: Soy asistente de liderazgo en la manada “Lobos Audaces”, donde mi nombre de caza es **Kotick**. Empecé como padre ayudante en 2018 y desde octubre de 2021 soy scout.
-intro.en: I am a leadership assistant in the “Lobos Audaces” cub pack, where my hunting name is **Kotick**. I started as a parent helper in 2018 and have been a scout since October 2021.
+intro.es: Soy educador asistente de manada en la manada “Lobos Audaces”, donde mi nombre de caza es **Kotick**. Empecé como padre ayudante en 2018 y desde octubre de 2021 soy Educador scout.
+intro.en: I am an assistant in the “Lobos Audaces” cub pack, where my hunting name is **Kotick**. I started as a parent helper in 2018 and have been a scout leader since October 2021.
 
 path_title.es: Recorrido
 path_title.en: Path
