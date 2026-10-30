@@ -1,0 +1,78 @@
+# PÁGINA DE INICIO.  Las reglas para editar están en content/LEEME.txt
+#
+# "es:" es el texto en español y "en:" el texto en inglés. Si cambiás uno, cambiá el otro.
+
+title: Inicio
+desc.es: Mariano S. Cosentino — tecnología, nube y docencia.
+desc.en: Mariano S. Cosentino — technology, cloud and teaching.
+
+tagline.es: Apasionado por la computación y la tecnología. Buenos Aires, Argentina.
+tagline.en: Passionate about computers and technology. Buenos Aires, Argentina.
+
+about_title.es: Sobre mí
+about_title.en: About me
+
+# Cada párrafo de "Sobre mí". Para agregar uno, copiá un bloque "- es: / en:" completo.
+about:
+- es: Soy Mariano Sergio Cosentino (“Marianok” o simplemente “MOK” para mis amigos) y nací en Buenos Aires en 1971. Soy un loco de las computadoras y de la tecnología en general.
+  en: I’m Mariano Sergio Cosentino (“Marianok” or simply “MOK” to my friends), and I was born in Buenos Aires, Argentina, back in ’71. I’m nuts about computers and technology in general.
+- es: Empecé a jugar con computadoras a principios de los ’80. Mi primera fue una Timex Sinclair 1000, que todavía conservo: con sus 2 KB de RAM me abrió los ojos a un mundo nuevo y maravilloso.
+  en: I started playing with computers in the early ’80s. My first one was a Timex Sinclair 1000 (which I still keep), and with its 2 KB of RAM it opened my eyes to a whole new world.
+- es: No soy fanático de los deportes; la excepción es el buceo deportivo, una de mis pasiones. Soy una persona sencilla que disfruta de trabajar, ama los desafíos y la buena vida (sin lujos, pero con confort). Me apasiona todo lo que hago, del trabajo a los hobbies, y aunque no vivo solo el hoy, aprovecho el momento.
+  en: I’m not a sports fan; the exception is scuba diving, one of my passions. I’m a simple guy who enjoys working, loves challenges and a nice life (not a luxury one). I’m passionate about everything I do, from work to hobbies, and while I don’t live only for today, I do seize the moment.
+
+quote.es: “Cada uno es el arquitecto de su propio destino. ¡Hacelo uno bueno!”
+quote.en: “You are the architect of your own destiny. Make it a good one!”
+quote_by.es: — una frase que mi madre solía decirme
+quote_by.en: — something my mother used to tell me
+
+since_title.es: Desde 2015
+since_title.en: Since 2015
+
+# Línea de tiempo, de lo más nuevo a lo más viejo. "year" es la etiqueta de la izquierda.
+timeline:
+- year.es: Hoy
+  year.en: Today
+  es: Area Manager, Information MGT en AT&T y profesor en la Universidad de Belgrano. Estudio inteligencia artificial: Claude Code in Action y AI Product Security.
+  en: Area Manager, Information MGT at AT&T and professor at Universidad de Belgrano. Studying artificial intelligence: Claude Code in Action and AI Product Security.
+- year: 2026
+  es: El 1 de enero termina mi etapa como MCT independiente, que empezó en 1999.
+  en: On 1 January my independent MCT career, which began in 1999, comes to an end.
+- year: 2023 – 2025
+  es: AT&T Believes Impact Award (Community Leader) tres años seguidos; en 2023 también Voluntario del Año.
+  en: AT&T Believes Impact Award (Community Leader) three years in a row; also Volunteer of the Year in 2023.
+- year: 2022
+  es: AT&T Global Volunteer Award, en voluntariado y servicios a la comunidad.
+  en: AT&T Global Volunteer Award, for volunteering and community services.
+- year: 2021
+  es: Profesor en la Universidad de Belgrano (abril) y Area Manager, Information MGT en AT&T (agosto).
+  en: Professor at Universidad de Belgrano (April) and Area Manager, Information MGT at AT&T (August).
+- year: 2021
+  es: Paso a ser scout y asistente de liderazgo en la manada “Lobos Audaces”, donde soy Kotick.
+  en: I become a scout and leadership assistant in the “Lobos Audaces” cub pack, where I am Kotick.
+- year: 2019
+  es: Microsoft MCT 20th Anniversary Award. En noviembre termina mi rol como MCT Regional Lead.
+  en: Microsoft MCT 20th Anniversary Award. My MCT Regional Lead role ends in November.
+- year: 2018
+  es: Empiezo como voluntario en la Comunidad Scout-Guía “San Pablo”.
+  en: I start volunteering with the Scout-Guía “San Pablo” community.
+- year: 2016
+  es: Empiezo en AT&T (abril) y como profesor adjunto en la Universidad de Belgrano (marzo). Charter Member de las nuevas certificaciones Microsoft: MCSA Web Applications, MCSD App Builder y MCSE Cloud Platform and Infrastructure.
+  en: I join AT&T (April) and the Universidad de Belgrano as adjunct professor (March). Charter Member of the new Microsoft certifications: MCSA Web Applications, MCSD App Builder and MCSE Cloud Platform and Infrastructure.
+- year: 2015
+  es: Proctor de los Hands-On Labs en Microsoft Ignite NA (Chicago).
+  en: Proctor for the Hands-On Labs at Microsoft Ignite NA (Chicago).
+
+# Tarjetas de acceso a cada sección (el título sale del menú, ver ui.txt).
+card_cv.es: Trabajos, estudios y reconocimientos.
+card_cv.en: Jobs, education and recognitions.
+card_projects.es: TiVo AR, XMLTV y otros desarrollos.
+card_projects.en: TiVo AR, XMLTV and other developments.
+card_courses.es: Cursos y seminarios que hice.
+card_courses.en: Courses and seminars I took.
+card_certs.es: Credenciales Microsoft.
+card_certs.en: Microsoft credentials.
+card_events.es: Eventos y conferencias.
+card_events.en: Events and conferences.
+card_scout.es: Mi voluntariado en la comunidad Scout.
+card_scout.en: My volunteering in the Scout community.

@@ -1,0 +1,36 @@
+# UN TRABAJO. El número del nombre del archivo solo define el orden en la lista (01 sale primero);
+# lo que viene después del número es la dirección de la página. Reglas de edición: content/LEEME.txt
+# Opcionales: role, period, roles, resp (responsabilidades), achievements (logros), photos.
+
+company: Universidad de Belgrano
+role.es: Profesor — Facultad de Tecnología Informática
+role.en: Professor — Faculty of Information Technology
+period.es: Mar 2016 – Actualidad
+period.en: Mar 2016 – Present
+summary.es: Docencia en la Facultad de Tecnología Informática, en las carreras de Ingeniería Informática y Licenciatura en Sistemas.
+summary.en: Teaching at the Faculty of Information Technology, in the Computer Engineering and Systems Degree programs.
+
+roles:
+- title.es: Profesor
+  title.en: Professor
+  period.es: Abr 2021 – Actualidad
+  period.en: Apr 2021 – Present
+  place: On-site
+  bullets:
+  - es: Sistemas Distribuidos — Ingeniería Informática y Licenciatura en Sistemas
+    en: Distributed Systems — Computer Engineering and Systems Degree
+  - es: Sistemas Concurrentes — Ingeniería Informática y Licenciatura en Sistemas
+    en: Concurrent Systems — Computer Engineering and Systems Degree
+  - es: Arquitectura de Computadoras — Ingeniería Informática y Licenciatura en Sistemas
+    en: Computer Architecture — Computer Engineering and Systems Degree
+- title.es: Profesor Adjunto Asociado
+  title.en: Adjunct Associate Professor
+  period.es: Mar 2016 – Abr 2021
+  period.en: Mar 2016 – Apr 2021
+  bullets:
+  - es: Sistemas Distribuidos — Ingeniería Informática y Licenciatura en Sistemas
+    en: Distributed Systems — Computer Engineering and Systems Degree
+  - es: Sistemas Concurrentes — Ingeniería Informática y Licenciatura en Sistemas
+    en: Concurrent Systems — Computer Engineering and Systems Degree
+  - es: Práctica Profesional II — Licenciatura en Sistemas
+    en: Professional Practice II — Systems Degree

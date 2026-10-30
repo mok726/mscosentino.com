@@ -1,0 +1,38 @@
+# PÁGINA "EXPERIENCIA".
+# Los trabajos están en la carpeta content/jobs/ (un archivo por trabajo).
+
+title: Experiencia
+desc.es: Trayectoria, estudios y reconocimientos.
+desc.en: Career, education and recognitions.
+
+lead.es: Cada puesto tiene su propia página con responsabilidades, logros y fotos.
+lead.en: Each position has its own page with responsibilities, accomplishments and photos.
+
+work_title.es: Trayectoria laboral
+work_title.en: Work history
+
+education_title.es: Estudios
+education_title.en: Education
+education:
+- es: California Coast University — Master of Science in IT Management (desde 2008; Summa Cum Laude, 2014)
+  en: California Coast University — Master of Science in IT Management (from 2008; Summa Cum Laude, 2014)
+- es: Universidad de Belgrano — Ingeniería en Computación (1994–1998)
+  en: Universidad de Belgrano — Computer Engineering (1994–1998)
+- es: Universidad de Belgrano — Analista de Sistemas (1994–1997)
+  en: Universidad de Belgrano — Systems Analyst (1994–1997)
+- es: Co.NET — Analista de Sistemas, programador BASIC y COBOL (1988–1990)
+  en: Co.NET — Systems Analyst, BASIC and COBOL programmer (1988–1990)
+- es: Colegio Mariano Moreno — Ciencias Físico-Matemáticas (1986–1989)
+  en: Colegio Mariano Moreno — Physics and Mathematics (1986–1989)
+
+recognitions_title.es: Reconocimientos
+recognitions_title.en: Recognitions
+recognitions:
+- AT&T Believes Impact Award — Community Leader (2023, 2024, 2025)
+- AT&T Global Volunteer Award (2022)
+- Microsoft MCT 20th Anniversary Award (2019)
+
+languages_title.es: Idiomas
+languages_title.en: Languages
+languages.es: Español (nativo), inglés (bilingüe), italiano (básico).
+languages.en: Spanish (native), English (bilingual), Italian (basic).

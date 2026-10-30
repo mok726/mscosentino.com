@@ -1,0 +1,24 @@
+# UN TRABAJO. El número del nombre del archivo solo define el orden en la lista (01 sale primero);
+# lo que viene después del número es la dirección de la página. Reglas de edición: content/LEEME.txt
+# Opcionales: role, period, roles, resp (responsabilidades), achievements (logros), photos.
+
+company: Sistemas Temporarios
+role.es: Operador VMS — cliente: Lautrec / Saatchi & Saatchi Publicidad
+role.en: VMS Operator — client: Lautrec / Saatchi & Saatchi Advertising
+period: Aug 1993 – Jan 1994
+summary.es: Servicios de sistemas para una agencia de publicidad.
+summary.en: Systems services for an advertising agency.
+
+resp:
+- es: Administración y operación de VAX/VMS
+  en: Administration and operations of VAX/VMS
+- es: Administración de un host Micro-VAX 3100: usuarios, terminales, colas de impresión, módems y cuentas
+  en: Management of a Micro-VAX 3100 host: users, terminals, print queues, modems and accounts
+- es: Administración de una red PATHWORKS de 28 nodos (PCSA, impresión remota, transferencia de archivos, setHost)
+  en: Administration of a 28-node PATHWORKS network (PCSA, remote printing, file transfer, setHost)
+- es: Desarrollo en Visual Basic 1.0 y 3.0 Professional, cliente-servidor sobre RDB de Digital
+  en: Development in Visual Basic 1.0 and 3.0 Professional, client-server over Digital RDB
+- es: Instalación y mantenimiento de software para PC y Macintosh
+  en: Installation and maintenance of software for PC and Macintosh
+- es: Monitoreo del cableado y de la red de datos de fibra óptica; coordinación de capacitación
+  en: Monitoring of cabling and the fiber-optic data network; training coordination

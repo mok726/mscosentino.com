@@ -1,0 +1,21 @@
+# UN TRABAJO. El número del nombre del archivo solo define el orden en la lista (01 sale primero);
+# lo que viene después del número es la dirección de la página. Reglas de edición: content/LEEME.txt
+# Opcionales: role, period, roles, resp (responsabilidades), achievements (logros), photos.
+
+company: Interlink Technologies
+role: AVP IT Infrastructure — Special Projects
+period: Nov 2010 – Sep 2014
+summary.es: Interlink Transport Technologies, Inc., subsidiaria de Mediterranean Shipping Company (USA) Inc., Warren, New Jersey.
+summary.en: Interlink Transport Technologies, Inc., a subsidiary of Mediterranean Shipping Company (USA) Inc., Warren, New Jersey.
+
+resp:
+- es: Planificación, implementación y gestión de proyectos especiales
+  en: Planning, implementation and management of special projects
+- es: Investigación de nuevas tecnologías
+  en: Research on new technologies
+- es: Diseño e implementación de pruebas de concepto de soluciones estratégicas
+  en: Design and proof-of-concept implementations of strategic solutions
+- es: Soporte técnico y resolución de problemas de máximo nivel
+  en: Top-level technical support and troubleshooting
+- es: Soporte y coordinación regional para las sucursales de Latinoamérica
+  en: Regional support and coordination for Latin America branches

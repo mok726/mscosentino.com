@@ -1,0 +1,17 @@
+# UN TRABAJO. El número del nombre del archivo solo define el orden en la lista (01 sale primero);
+# lo que viene después del número es la dirección de la página. Reglas de edición: content/LEEME.txt
+# Opcionales: role, period, roles, resp (responsabilidades), achievements (logros), photos.
+
+company: Sistran
+role.es: Analista Programador
+role.en: Analyst Programmer
+period: Jul 1990 – Jul 1992
+summary: SISTRAN Consultores S.A., Buenos Aires.
+
+resp:
+- es: Desarrollo del sistema FRUT-PACK
+  en: Development of the FRUT-PACK system
+- es: Desarrollo, programación y mantenimiento de sistemas para compañías de seguros, transporte y empresas frutihortícolas
+  en: Development, programming and maintenance of systems for insurance, transport and fruit-and-vegetable companies
+- es: Uso de UNIX, Universe y PICK sobre una amplia gama de equipos
+  en: Using UNIX, Universe and PICK on a wide range of equipment

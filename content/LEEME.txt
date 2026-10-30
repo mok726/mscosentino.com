@@ -1,0 +1,82 @@
+CÓMO EDITAR EL CONTENIDO DEL SITIO
+===================================
+
+Todos los textos del sitio están en esta carpeta (content/), en archivos de texto
+comunes que se abren con el Bloc de notas o con cualquier editor. No hace falta
+tocar build.py.
+
+QUÉ ARCHIVO EDITAR
+------------------
+  site.txt            Nombre, dirección web, correo y redes sociales
+  ui.txt              Menú de navegación y rótulos comunes
+  home.txt            Página de inicio (Sobre mí, línea de tiempo "Desde 2015")
+  cv.txt              Página Experiencia (estudios, reconocimientos, idiomas)
+  jobs/NN-nombre.txt  Un archivo por trabajo (cada uno tiene su propia página)
+  projects.txt        Proyectos
+  courses.txt         Cursos
+  certifications.txt  Certificaciones
+  events.txt          Eventos
+  scout.txt           Scout
+
+FORMATO (muy simple)
+--------------------
+1. Una línea que empieza con # es un comentario: el sitio la ignora.
+
+2. Un texto va así:      campo: texto
+   Un texto bilingüe:    campo.es: texto en español
+                         campo.en: text in English
+   Si escribís un texto sin .es/.en, se usa igual en los dos idiomas.
+
+3. Una lista empieza con el nombre del campo y sigue con una línea "- " por ítem:
+
+       recognitions:
+       - AT&T Global Volunteer Award (2022)
+       - Microsoft MCT 20th Anniversary Award (2019)
+
+4. Un ítem bilingüe se escribe con dos líneas (la segunda sangrada con 2 espacios):
+
+       - es: Texto en español
+         en: Text in English
+
+5. Un ítem con varios datos usa un dato por línea, sangrados con 2 espacios:
+
+       - year: 2026
+         es: El 1 de enero termina mi etapa como MCT independiente.
+         en: On 1 January my independent MCT career ends.
+
+6. Los textos son texto normal: escribí & < > y comillas tal cual, sin códigos HTML.
+   Negrita:  **así**       Enlace:  [texto](https://sitio.com)
+
+QUÉ HACER EN LOS CASOS COMUNES
+------------------------------
+* Cambiar un texto: buscalo con Ctrl+F, cambialo en español Y en inglés.
+* Agregar un párrafo, un curso, un evento...: copiá un ítem completo (las líneas
+  que empiezan con "- " y sus líneas sangradas) y pegalo donde quieras que aparezca.
+  El orden en el archivo es el orden en la página.
+* Agregar un trabajo: copiá un archivo de content/jobs/, ponele un nombre nuevo
+  como 13-mi-empresa.txt y editá su contenido. El número solo ordena la lista
+  (01 sale primero). El nombre sin el número es la dirección de su página.
+* Quitar algo: borrá el ítem completo (sus líneas "- ..." y las sangradas).
+* Agregar una foto a un trabajo: copiá la foto a site/assets/photos/ (achicala antes,
+  unos 1200 px de ancho) y agregá un bloque "photos:" como el de 01-att.txt.
+
+CUIDADOS
+--------
+* Los dos puntos van pegados al nombre del campo: "title: Hola", no "title : Hola".
+* Los nombres de campo van en minúsculas, sin espacios (company, role, period...).
+* No uses la tecla Tab para sangrar: usá espacios.
+* Mantené el sangrado de las líneas que están bajo un "- ".
+* Guardá los archivos como UTF-8 (el Bloc de notas de Windows 10/11 ya lo hace).
+* Si algo está mal escrito, build.py avisa con el archivo y el número de línea.
+
+PUBLICAR LOS CAMBIOS
+--------------------
+Desde la carpeta del proyecto:
+
+    python build.py site
+    git add -A
+    git commit -m "Describe el cambio"
+    git push
+
+Al hacer push, GitHub publica el sitio en Azure solo (tarda uno o dos minutos).
+Para ver el resultado antes de publicar, abrí site/index.html en el navegador.

@@ -1,0 +1,95 @@
+# PÁGINA "CURSOS".
+
+title: Cursos
+desc.es: Cursos y seminarios realizados.
+desc.en: Courses and seminars taken.
+
+heading.es: Cursos y seminarios
+heading.en: Courses and seminars
+lead.es: Formación continua a lo largo de los años.
+lead.en: Continuing education over the years.
+
+recent_title.es: Recientes
+recent_title.en: Recent
+history_title.es: Historial
+history_title.en: History
+
+# Cursos recientes. Un texto simple sirve para los dos idiomas.
+recent:
+- Claude Code in Action
+- AI Product Security
+- es: Agile y gestión de proyectos
+  en: Agile and project management
+- es: Administración de negocios
+  en: Business administration
+- es: OpenStack y computación en la nube
+  en: OpenStack and cloud computing
+- es: Privacidad y seguridad de la información
+  en: Privacy and information security
+- es: Licencias de software libre
+  en: Free software licensing
+
+# Historial, del más nuevo al más viejo. "date" es opcional; "org" es el lugar; "title" el curso.
+history:
+- date: Jun 2006
+  org: EMC Corporation, Summit NJ
+  title: EMC Centera Operations
+- date: Dic 2003
+  org: Unisys Corporation, Chicago IL
+  title: Workshop: “Implementing and Supporting Self-Managing Technologies in the Data Center”
+- date: Dic 1997
+  org: Sonda Computación S.A. (dictado por personal de Microsoft)
+  title: Exchange Server 5.5
+- date: Nov 1997
+  org: Universidad de Belgrano
+  title.es: Planeamiento Estratégico
+  title.en: Strategic Planning
+- date: Oct 1997
+  org: Universidad de Belgrano
+  title.es: Relevamiento Técnico
+  title.en: Technical Survey
+- date: Oct 1997
+  org: Tecnoda S.A. (personal de Tango/04)
+  title.es: Replicación con DataMirror
+  title.en: Replication with DataMirror
+- date: Jul–Sep 1997
+  org: Universidad de Belgrano (docentes de IT College)
+  title: Windows NT 4.0
+- date: Mar 1997
+  org: IT College
+  title.es: Migrando a Windows NT 4.0
+  title.en: Migrating to Windows NT 4.0
+- date: May 1996
+  org: Universidad de Belgrano (expertos de Siemens)
+  title.es: Seguridad de la Información
+  title.en: Information Security
+- date: Abr 1996
+  org: Sheraton Hotel, Buenos Aires (dictado por Nicholas Negroponte)
+  title.es: Presente, pasado y futuro de Internet
+  title.en: Present, Past and Future of the Internet
+- date: Jun 1995
+  org: Universidad de Belgrano
+  title.es: Tendencias prospectivas en computación
+  title.en: Prospective Trends in Computing
+- date: Oct 1992
+  org: Microsoft Seminar Series, Chicago IL
+  title: MS-Word for Windows · MS-Excel · Programming with Visual BASIC
+- date: Jul 1992
+  org: Joliet Junior College, Joliet IL
+  title.es: Administración de sistemas UNIX
+  title.en: UNIX Systems Administration
+- date: May 1992
+  org: Comdex Spring ’92
+  title.es: Seguridad de datos · Algoritmos de compresión de datos y LHZ
+  title.en: Data Security · Data Compression Algorithms and LHZ
+- date: Feb 1992
+  org: Software Development ’92
+  title.es: Multimedia: especificaciones y certificación · Capacitación con multimedia
+  title.en: Multimedia: Specifications & Certification · Training with Multimedia
+- date: Feb 1989
+  org: Instituto de PsicoOrientología
+  title: Silva Mind Control
+- org.es: Otros
+  org.en: Others
+  title.es: Seguridad electrónica · Programación con Visual BASIC · Windows NT 4.0 Core Technologies
+  title.en: Electronic Security · Programming with Visual BASIC · Windows NT 4.0 Core Technologies

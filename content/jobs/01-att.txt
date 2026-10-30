@@ -1,0 +1,66 @@
+# UN TRABAJO. El número del nombre del archivo solo define el orden en la lista (01 sale primero);
+# lo que viene después del número es la dirección de la página. Reglas de edición: content/LEEME.txt
+# Opcionales: role, period, roles, resp (responsabilidades), achievements (logros), photos.
+
+company: AT&T
+role: Area Manager, Information MGT
+period.es: Abr 2016 – Actualidad
+period.en: Apr 2016 – Present
+summary.es: Trabajo en AT&T, en la Provincia de Buenos Aires, Argentina, desde abril de 2016.
+summary.en: I have worked at AT&T, in Buenos Aires Province, Argentina, since April 2016.
+
+roles:
+- title: Area Manager, Information MGT
+  period.es: Ago 2021 – Actualidad
+  period.en: Aug 2021 – Present
+  place: Buenos Aires Province, Argentina
+- title: Principal
+  period.es: Abr 2017 – Abr 2022
+  period.en: Apr 2017 – Apr 2022
+  place: Greater Buenos Aires
+  bullets:
+  - es: Lideré el grupo de trabajo “ADEX” (Active Directory y Exchange) del contrato TSI de AT&T para nuestra empresa hermana VRIO (DirecTV Latam).
+    en: Led the “ADEX” (Active Directory & Exchange) task force of AT&T’s TSI engagement for our sister company VRIO (DirecTV Latam).
+  - es: Selección, gestión, formación y coaching de un nuevo equipo dedicado a sostener la infraestructura.
+    en: Selection, management, training and coaching of a new team focused on supporting the infrastructure.
+  - es: Diseñé, planifiqué e implementé la consolidación de un conjunto heterogéneo de servidores de correo en una solución moderna y coherente de Exchange Server, con redundancia local y geográfica completa.
+    en: Designed, planned and implemented the consolidation of an eclectic collection of email servers into a coherent, modern Exchange Server solution with full local and geographical redundancy.
+  - es: Lideré los procesos de modernización y consolidación de todos los servicios de Active Directory dentro de nuestro alcance.
+    en: Led the modernization and consolidation of all Active Directory services within our service scope.
+  - es: Desarrollé procesos, manuales y documentación para mejorar la transferencia de conocimiento, la repetibilidad y la satisfacción del cliente.
+    en: Developed processes, manuals and documentation to improve knowledge transfer, repeatability and customer satisfaction.
+  - es: Desarrollé, y supervisé el desarrollo de, herramientas de monitoreo y automatización para reducir tiempos de resolución, optimizar recursos y bajar la carga de trabajo.
+    en: Developed, and supervised the development of, monitoring and automation tools to improve resolution times, optimize resource utilization and reduce workload.
+  - es: Diseñé y planifiqué el reemplazo de la solución Exchange on-premise por Office 365.
+    en: Designed and planned the replacement of the on-premise Exchange solution with Office 365.
+  - es: Seguí actuando como Customer Advocate y nexo entre AT&T TSI (Technology Services International) y nuestra empresa hermana AT&T de México, a la que brindamos servicios de IT: analizar necesidades y proponer cambios o servicios adicionales, documentar procedimientos operativos y establecer buenas prácticas, controlar el cumplimiento de políticas y legislación, dar guía técnica, transmitir requerimientos al equipo, responder consultas a tiempo y capacitar a los clientes.
+    en: Continued acting as Customer Advocate and liaison between AT&T TSI (Technology Services International) and our sister company AT&T de México, to which we provide IT services: analyzing needs and suggesting changes or additional services, documenting operational procedures and establishing best practices, monitoring adherence to policies and legislation, providing technical guidance, passing new requirements to developers and the internal team, answering product queries on time and training customers.
+- title: Senior Specialist
+  period.es: Abr 2016 – Abr 2017
+  period.en: Apr 2016 – Apr 2017
+  place: Buenos Aires, Buenos Aires Province, Argentina
+  bullets:
+  - es: Customer Advocate y nexo entre AT&T TSI (Technology Services International) y nuestra empresa hermana AT&T de México, a la que brindamos servicios de IT.
+    en: Customer Advocate and liaison between AT&T TSI (Technology Services International) and our sister company AT&T de México, to which we provide IT services.
+  - es: Documentar procedimientos operativos y establecer buenas prácticas; controlar el cumplimiento de políticas corporativas y legislación aplicable.
+    en: Document operational procedures and establish best practices; monitor adherence to corporate policies and applicable legislation.
+  - es: Dar guía técnica a los clientes, analizar sus necesidades y transmitir nuevos requerimientos a los desarrolladores y al equipo interno.
+    en: Provide technical guidance to customers, analyze their needs and pass new requirements to developers and the internal team.
+  - es: Responder a tiempo las consultas sobre productos y capacitar a los clientes para usarlos eficazmente.
+    en: Address product-related queries on time and train customers to use products effectively.
+
+achievements:
+- es: AT&T Believes Impact Award 2025 — Community Leader (abr 2026)
+  en: AT&T Believes Impact Award 2025 — Community Leader (Apr 2026)
+- es: AT&T Believes Impact Award 2024 — Community Leader, categoría internacional (abr 2025)
+  en: AT&T Believes Impact Award 2024 — Community Leader, International (Apr 2025)
+- es: AT&T Believes Impact Award 2023 — Community Leader y Voluntario del Año (abr 2024)
+  en: AT&T Believes Impact Award 2023 — Community Leader and Volunteer of the Year (Apr 2024)
+- es: 2022 AT&T Global Volunteer Award — Voluntariado y servicios a la comunidad (may 2023)
+  en: 2022 AT&T Global Volunteer Award — Volunteering and Community Services (May 2023)
+
+photos:
+- file: att-believes.jpg
+  alt: Con la gorra de AT&T Believes
+  caption.es: Con la gorra de AT&T Believes.
+  caption.en: Wearing the AT&T Believes cap.

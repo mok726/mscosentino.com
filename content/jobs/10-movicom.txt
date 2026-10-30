@@ -1,0 +1,21 @@
+# UN TRABAJO. El número del nombre del archivo solo define el orden en la lista (01 sale primero);
+# lo que viene después del número es la dirección de la página. Reglas de edición: content/LEEME.txt
+# Opcionales: role, period, roles, resp (responsabilidades), achievements (logros), photos.
+
+company: Movicom BellSouth
+role.es: Jefe de turno de operaciones nocturnas
+role.en: Shift Manager, Night Operations
+period: Mar 1994 – Dec 1996
+summary: Compañía de Radiocomunicaciones Móviles S.A. (Movicom BellSouth), Buenos Aires.
+
+resp:
+- es: Operación de sistemas VAX/VMS y UNIX
+  en: System operation on VAX/VMS and UNIX
+- es: Diseño e implementación de procedimientos operativos
+  en: Designing and implementing operational procedures
+- es: Desarrollo e implementación de herramientas de administración y control de procesos
+  en: Development and implementation of tools for administration and control of processes
+- es: Asistencia en la administración diaria de hosts y administración del paquete ALL-IN-1
+  en: Assistance in daily host administration and administration of the ALL-IN-1 package
+- es: Gestión del equipo del turno nocturno
+  en: Management of the night-shift team

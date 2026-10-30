@@ -1,0 +1,121 @@
+# PÁGINA "CERTIFICACIONES".
+
+title: Certificaciones
+desc.es: Certificaciones Microsoft.
+desc.en: Microsoft certifications.
+
+heading.es: Certificaciones
+heading.en: Certifications
+lead.es: Certificaciones Microsoft obtenidas a lo largo de mi carrera. Algunas corresponden a programas ya retirados.
+lead.en: Microsoft certifications earned throughout my career. Some belong to programs that have since been retired.
+
+verify_url: https://mcp.microsoft.com/authenticate/validatemcp.aspx
+verify_text.es: Verificación en el sitio de Microsoft
+verify_text.en: Verify on the Microsoft site
+
+# Cada certificación es un desplegable; "items" son las etiquetas que muestra.
+certs:
+- name: Microsoft Certified Trainer (MCT)
+  items:
+  - Microsoft Certified Trainer
+- name: Microsoft Certified Solutions Expert (MCSE) — Private Cloud
+  items:
+  - Private Cloud
+- name: Microsoft Certified Solutions Developer (MCSD) 2013
+  items:
+  - Web Applications
+- name: Microsoft Certified Solutions Associate (MCSA)
+  items:
+  - Windows Server 2008
+  - Windows 7
+  - Windows Server 2012
+  - Windows 8
+- name: Microsoft Certified IT Professional (MCITP)
+  items:
+  - Enterprise Support Technician on Windows Vista
+  - Enterprise Desktop Support Technician on Windows 7
+  - Enterprise Administrator on Windows Server 2008
+  - Enterprise Messaging Administrator on Exchange 2007
+  - Enterprise Desktop Administrator on Windows 7
+- name: Microsoft Certified Technology Specialist (MCTS)
+  items:
+  - Windows Vista, Configuration
+  - Windows Server 2008 Active Directory, Configuration
+  - Windows Server 2008 Applications Infrastructure, Configuration
+  - Windows Server 2008 Network Infrastructure, Configuration
+  - Windows 7, Configuration
+  - Exchange Server 2007, Configuration
+  - Exchange Server 2010, Configuration
+  - SQL Server 2008, Database Development
+  - Dynamics CRM 2011 Extending
+  - Project 2010, Managing Projects
+  - Dynamics Retail Management System 2.0 Store Operations
+  - Dynamics Retail Management System 2.0 Headquarters
+- name: Microsoft Specialist
+  items:
+  - Programming in HTML5 with JavaScript and CSS3
+  - Programming in C#
+  - Administering Office 365 for Small Business
+  - Dynamics Deployment in CRM 2013
+  - Dynamics NAV 2013 Installation and Configuration
+  - Dynamics AX 2012 Development Introduction
+  - Dynamics AX 2012 Financials
+  - Dynamics AX 2012 Installation and Configuration
+- name: Microsoft Certified Dynamics Specialist
+  items:
+  - Dynamics AX 2012 Development Introduction
+  - Dynamics AX 2012 Financials
+  - Dynamics AX 2012 Installation and Configuration
+- name: Microsoft Technology Associate (MTA)
+  items:
+  - Software Testing Fundamentals
+  - Networking Fundamentals
+  - Security Fundamentals
+  - Windows Server Administration Fundamentals
+  - Database Fundamentals
+  - .NET Fundamentals
+  - Web Development Fundamentals
+  - Software Development Fundamentals
+  - Windows Operating System Fundamentals
+  - HTML5 Application Development Fundamentals
+- name: Microsoft Certified Systems Engineer (MCSE)
+  items:
+  - Windows Server 2003
+  - Windows 2000
+  - Windows NT 4.0
+- name: MCSE: Messaging
+  items:
+  - Windows 2000
+  - Windows Server 2003
+- name: MCSE: Security
+  items:
+  - Windows 2000
+  - Windows Server 2003
+- name: Microsoft Certified Systems Administrator (MCSA)
+  items:
+  - Windows Server 2003
+  - Windows 2000
+- name: MCSA: Messaging
+  items:
+  - Windows 2000
+  - Windows Server 2003
+- name: MCSA: Security
+  items:
+  - Windows Server 2003
+- name: Microsoft Certified Database Administrator (MCDBA)
+  items:
+  - SQL Server 2000
+- name: Microsoft Certified Solution Developer (MCSD)
+  items:
+  - .NET
+  - Visual Studio 6.0
+- name: MCSD — Windows Architecture (old track)
+  items:
+  - Windows Architecture I
+  - Windows Architecture II
+- name: Microsoft Certified Application Developer (MCAD)
+  items:
+  - .NET
+- name: Microsoft Certified Desktop Support Technician (MCDST)
+  items:
+  - Windows XP

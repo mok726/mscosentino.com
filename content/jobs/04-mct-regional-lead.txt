@@ -1,0 +1,18 @@
+# UN TRABAJO. El número del nombre del archivo solo define el orden en la lista (01 sale primero);
+# lo que viene después del número es la dirección de la página. Reglas de edición: content/LEEME.txt
+# Opcionales: role, period, roles, resp (responsabilidades), achievements (logros), photos.
+
+company: Microsoft Learning
+role.es: MCT Regional Lead (Argentina) — voluntario ad honorem
+role.en: MCT Regional Lead (Argentina) — ad honorem volunteer
+period: Sep 2012 – Nov 2019
+summary.es: Un MCT Regional Lead es una persona elegida por Microsoft, entre un grupo de voluntarios, para interactuar con la comunidad de MCT y canalizar recursos y atender sus inquietudes y necesidades.
+summary.en: An MCT Regional Lead is someone selected by Microsoft, from a pool of volunteers, to interact with the MCT community in order to channel resources and address MCTs’ concerns and needs.
+
+resp:
+- es: Nexo entre los MCT de la región y Microsoft Learning u otros grupos de negocio de Microsoft
+  en: Liaison between regional MCTs and Microsoft Learning and/or other Microsoft business groups
+- es: Punto de contacto, mentoría y soporte para los MCT de la región
+  en: Point of contact, mentoring and support for MCTs in the region
+- es: Mentoría de nuevos MCT
+  en: Mentoring new MCTs

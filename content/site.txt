@@ -1,0 +1,16 @@
+# DATOS GENERALES DEL SITIO: nombre, dirección web, contacto y redes.
+
+site_url: https://mscosentino.com
+name: Mariano S. Cosentino
+full_name: Mariano Sergio Cosentino
+
+# El correo es mariano@mscosentino.com. Se arma en el navegador para que los robots de spam no lo lean.
+email_user: mariano
+email_domain: mscosentino.com
+
+linkedin: https://www.linkedin.com/in/mscosentino
+github: https://github.com/mok726
+facebook: https://www.facebook.com/mscosentino
+x: https://x.com/mok726
+x_work: https://x.com/MCTArgentina
+x_work_label: MCT Argentina

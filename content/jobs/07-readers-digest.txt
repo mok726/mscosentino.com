@@ -1,0 +1,25 @@
+# UN TRABAJO. El número del nombre del archivo solo define el orden en la lista (01 sale primero);
+# lo que viene después del número es la dirección de la página. Reglas de edición: content/LEEME.txt
+# Opcionales: role, period, roles, resp (responsabilidades), achievements (logros), photos.
+
+company: Reader’s Digest Argentina
+role.es: Analista Funcional
+role.en: Functional Analyst
+period: Jun 1998 – Jul 2001
+summary: Reader’s Digest Argentina S.A., Buenos Aires.
+
+resp:
+- es: Analizar y mejorar los flujos de datos de la organización
+  en: Analyze and improve organizational data flows
+- es: Diseñar nuevos sistemas de información y nuevas funcionalidades para los existentes
+  en: Design new information systems and new functionality for existing systems
+- es: Seleccionar y contratar desarrolladores y proveedores externos
+  en: Select and hire developers and outsourcers
+- es: Gestionar los equipos de desarrollo internos y externos
+  en: Manage internal and external development teams
+- es: Administración de Windows NT
+  en: Windows NT administration
+
+achievements:
+- es: Great Performers Team Award, Reader’s Digest Argentina S.A. (oct 2000)
+  en: Great Performers Team Award, Reader’s Digest Argentina S.A. (Oct 2000)

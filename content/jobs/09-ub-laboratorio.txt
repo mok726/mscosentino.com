@@ -1,0 +1,24 @@
+# UN TRABAJO. El número del nombre del archivo solo define el orden en la lista (01 sale primero);
+# lo que viene después del número es la dirección de la página. Reglas de edición: content/LEEME.txt
+# Opcionales: role, period, roles, resp (responsabilidades), achievements (logros), photos.
+
+company: Universidad de Belgrano
+role.es: Asistente de laboratorio (ad honorem) — Facultad de Tecnología Informática
+role.en: Laboratory Assistant (ad honorem) — Faculty of Information Technology
+period: May 1994 – Dec 1997
+summary.es: Facultad de Tecnología Informática, Universidad de Belgrano.
+summary.en: Faculty of Information Technology, Universidad de Belgrano.
+
+resp:
+- es: Administración y organización de las actividades diarias del laboratorio
+  en: Administration and organization of the daily activities of the lab
+- es: Asistencia a docentes y alumnos, capacitación y soporte técnico
+  en: Assistance to teachers and students, training and technical support
+- es: Administración de sistemas Windows NT, Unix y AS/400
+  en: Administration of Windows NT, Unix and AS/400 systems
+
+photos:
+- file: ub-entrada.jpg
+  alt: Frente a la entrada de la UB
+  caption.es: Frente a la entrada de la Universidad de Belgrano.
+  caption.en: In front of the Universidad de Belgrano entrance.

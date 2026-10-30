@@ -1,0 +1,58 @@
+# PÁGINA "PROYECTOS".
+
+title: Proyectos
+desc.es: Proyectos y desarrollos.
+desc.en: Projects and developments.
+
+heading.es: Proyectos
+heading.en: Projects
+lead.es: Algunos desarrollos propios y contribuciones.
+lead.en: Some of my own developments and contributions.
+
+# Tarjetas. "icon" puede ser code o github. Si tiene "url", la tarjeta es un enlace.
+projects:
+- name: TiVo AR
+  years: (2005–2019)
+  icon: code
+  es: Adaptación de equipos TiVo de Estados Unidos para funcionar en Argentina.
+  en: Adapting US TiVo units to work in Argentina.
+- name: XMLTV · TV_GRAB_AR
+  years: (2007–2019)
+  icon: code
+  es: Mantenimiento de los módulos de XMLTV para la grilla de TV argentina.
+  en: Maintenance of the XMLTV modules for Argentine TV listings.
+- name: REG_2_ADMX
+  icon: github
+  url: https://github.com/mok726/Convert-Registry-files-.reg-into-ADMX-ADML-files-for-GPO
+  es: Convierte archivos .reg en plantillas ADMX/ADML para GPO (VBScript).
+  en: Converts .reg files into ADMX/ADML templates for GPO (VBScript).
+
+other_title.es: Otros desarrollos
+other_title.en: Other developments
+# Etiquetas sueltas, una por línea.
+other:
+- Add-URL2URLSET
+- Blog Replicator
+- SEND2BEEPER
+- ACD
+- SACE
+- MAP_95 / MAP_9x
+
+github_title.es: En GitHub
+github_title.en: On GitHub
+github:
+- name: MMM-PictureRotator
+  url: https://github.com/mok726/MMM-PictureRotator
+  es: módulo de MagicMirror que rota imágenes de distintas fuentes
+  en: MagicMirror module that rotates images from several sources
+- name: MMM-NetworkScanner
+  url: https://github.com/mok726/MMM-NetworkScanner
+  es: fork; estado de dispositivos de red por MAC
+  en: fork; network device presence by MAC address
+- name: ManagedPasswordFilter
+  url: https://github.com/mok726/ManagedPasswordFilter
+  es: fork; filtro de contraseñas de Windows en código administrado
+  en: fork; Windows password filter in managed code
+
+all_github.es: Ver todos en GitHub
+all_github.en: See all on GitHub

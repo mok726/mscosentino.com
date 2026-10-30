@@ -1,0 +1,34 @@
+# PÁGINA "EVENTOS".
+
+title: Eventos
+desc.es: Eventos y conferencias.
+desc.en: Events and conferences.
+
+heading.es: Eventos y conferencias
+heading.en: Events and conferences
+lead.es: Eventos que organicé o en los que participé.
+lead.en: Events I organized or took part in.
+
+# De más nuevo a más viejo. "meta" es la línea gris; "text" un párrafo; "bullets" una lista (opcionales).
+events:
+- title: Microsoft Ignite NA 2015 — HOL Proctor
+  meta.es: 2015 – actualidad · Voluntario
+  meta.en: 2015 – present · Volunteer
+  text.es: Proctor de los laboratorios prácticos (Hands-On Labs).
+  text.en: Proctor for the Hands-On Labs.
+- title: COMDEX / Windows World / Infocomm Argentina 1998
+  meta.es: 18 al 22 de mayo de 1998 · Predio Rural de Palermo · Orador
+  meta.en: 18–22 May 1998 · Predio Rural de Palermo · Speaker
+  text.es: Tema: Microsoft Transaction Server. Organizado por Microsoft Argentina S.A.
+  text.en: Topic: Microsoft Transaction Server. Hosted by Microsoft Argentina S.A.
+- title.es: “Tecnología en Papel” — primera exposición de publicaciones informáticas
+  title.en: “Tecnología en Papel” — first exhibition of computer publications
+  meta.es: 24 al 26 de octubre de 1994 · José Hernández 1880, Capital Federal · Organizó la Facultad de Tecnología Informática, Universidad de Belgrano
+  meta.en: 24–26 October 1994 · José Hernández 1880, Capital Federal · Sponsored by the Faculty of Information Technology, Universidad de Belgrano
+  bullets:
+  - es: Selección de las empresas expositoras
+    en: Selection of exhibitor companies
+  - es: Selección y preparación del espacio físico
+    en: Selection and preparation of the physical space
+  - es: Publicidad y relaciones públicas de la muestra
+    en: Advertising and public relations of the exhibition

@@ -1,0 +1,42 @@
+# PÁGINA "SCOUT".  Para poner texto en negrita, rodealo con **dos asteriscos**.
+
+title: Scout
+desc.es: Voluntariado Scout.
+desc.en: Scout volunteering.
+
+lead.es: Voluntariado en la Comunidad Scout-Guía “San Pablo”, Scouts de Argentina.
+lead.en: Volunteering with the Scout-Guía “San Pablo” community, Scouts de Argentina.
+
+intro.es: Soy asistente de liderazgo en la manada “Lobos Audaces”, donde mi nombre de caza es **Kotick**. Empecé como padre ayudante en 2018 y desde octubre de 2021 soy scout.
+intro.en: I am a leadership assistant in the “Lobos Audaces” cub pack, where my hunting name is **Kotick**. I started as a parent helper in 2018 and have been a scout since October 2021.
+
+path_title.es: Recorrido
+path_title.en: Path
+path:
+- title.es: Scout — asistente de liderazgo, manada “Lobos Audaces”
+  title.en: Scout — leadership assistant, “Lobos Audaces” pack
+  period.es: Oct 2021 – actualidad
+  period.en: Oct 2021 – present
+- title.es: Padre ayudante / adulto ayudante
+  title.en: Parent helper / adult helper
+  period: Mar 2018 – Oct 2021
+
+recognitions_title.es: Reconocimientos
+recognitions_title.en: Recognitions
+recognitions:
+- es: AT&T Believes Impact Award — Community Leader (2023, 2024 y 2025); en 2023 también Voluntario del Año
+  en: AT&T Believes Impact Award — Community Leader (2023, 2024 and 2025); Volunteer of the Year in 2023
+- AT&T Global Volunteer Award (2022)
+
+photos_title.es: Fotos
+photos_title.en: Photos
+# Las fotos van en site/assets/photos/. "alt" describe la foto (accesibilidad); "caption" es el epígrafe.
+photos:
+- file: scout-manada.jpg
+  alt: Saludo scout con el uniforme de Educador de Manada
+  caption.es: Kotick, Educador de Manada.
+  caption.en: Kotick, cub pack educator.
+- file: scout-30-anios.jpg
+  alt: Junto al cartel de los 30 años de Scouts de Argentina, Zona 15
+  caption.es: 30 años de Scouts de Argentina — Zona 15.
+  caption.en: 30 years of Scouts de Argentina — Zone 15.

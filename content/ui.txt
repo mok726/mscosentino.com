@@ -1,0 +1,25 @@
+# TEXTOS COMUNES: menú de navegación y rótulos que se repiten en varias páginas.
+
+nav_home.es: Inicio
+nav_home.en: Home
+nav_cv.es: Experiencia
+nav_cv.en: Experience
+nav_projects.es: Proyectos
+nav_projects.en: Projects
+nav_courses.es: Cursos
+nav_courses.en: Courses
+nav_certs.es: Certificaciones
+nav_certs.en: Certifications
+nav_events.es: Eventos
+nav_events.en: Events
+nav_scout: Scout
+
+# Páginas de cada trabajo
+see_details.es: Ver detalle
+see_details.en: See details
+responsibilities.es: Responsabilidades
+responsibilities.en: Responsibilities
+accomplishments.es: Logros
+accomplishments.en: Accomplishments
+photos.es: Fotos
+photos.en: Photos

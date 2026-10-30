@@ -1,0 +1,11 @@
+# UN TRABAJO. El número del nombre del archivo solo define el orden en la lista (01 sale primero);
+# lo que viene después del número es la dirección de la página. Reglas de edición: content/LEEME.txt
+# Opcionales: role, period, roles, resp (responsabilidades), achievements (logros), photos.
+
+company: MCT Freelance
+role.es: Microsoft Certified Trainer independiente
+role.en: Independent Microsoft Certified Trainer
+period.es: 1999 – 1 ene 2026
+period.en: 1999 – 1 Jan 2026
+summary.es: Capacitación independiente como Microsoft Certified Trainer (MCT), desde 1999 hasta el 1 de enero de 2026.
+summary.en: Independent training work as a Microsoft Certified Trainer (MCT), from 1999 until 1 January 2026.
