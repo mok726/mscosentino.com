@@ -1,0 +1,15 @@
+title.es: Caja organizadora personalizable
+title.en: Customizable storage box
+kind: 3d
+summary.es: Caja organizadora cuadrada en medidas métricas, de distintas alturas y apilable, hecha en OpenSCAD.
+summary.en: A square storage box in metric sizes, with different heights and stackable, made in OpenSCAD.
+
+body:
+- es: Me gustó mucho el diseño de cajas de Chappel y sus videos, pero no me gustaba el tamaño extraño del original, así que me propuse hacer una caja perfectamente cuadrada y en sistema métrico.
+  en: I really liked Chappel’s box design and the videos he made, but I did not like the odd size of the original, so I set out to create a perfectly square box in the metric system.
+- es: Quise además que hubiera distintas alturas (para pocos objetos o piezas pequeñas) y que fueran apilables. Fue una buena forma de aprender OpenSCAD.
+  en: I also wanted different heights (for small or few items) and to make them stackable. It was a good way to learn OpenSCAD.
+
+links:
+- site: Thingiverse
+  url: https://www.thingiverse.com/thing:4751282

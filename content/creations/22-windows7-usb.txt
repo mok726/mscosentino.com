@@ -1,0 +1,18 @@
+title.es: Windows 7 en mi tablet, instalado desde un pendrive
+title.en: Windows 7 on my tablet, installed from a USB drive
+kind: guide
+when: 2009
+summary.es: Cómo instalé Windows 7 en una tablet vieja sin lector de CD/DVD, usando un pendrive.
+summary.en: How I installed Windows 7 on an old tablet with no CD/DVD drive, using a USB drive.
+
+body:
+- es: Compré una tablet vieja pero linda (Pentium M, 1,5 GB de RAM, disco de 30 GB, wifi y bluetooth) para experimentar y usarla como libro electrónico. Quería probar las novedades de Windows 7, pero la máquina no tenía lector de CD/DVD ni yo una unidad USB-DVD.
+  en: I bought an old but nice tablet (Pentium M, 1.5 GB of RAM, 30 GB drive, wireless and Bluetooth) to experiment and to use as an eBook reader. I wanted to try the new features of Windows 7, but the machine has no CD/DVD drive and I had no USB-DVD.
+- es: Tras leer dos guías sobre cómo instalar Windows 7 desde un pendrive, lo probé: bajé Windows 7 Professional del sitio de Microsoft y usé un pendrive de 5 GB. En la entrada cuento los pasos y cómo me fue.
+  en: After reading two guides on installing Windows 7 from a USB flash drive, I gave it a try: I downloaded Windows 7 Professional from Microsoft.com and used a 5 GB USB drive. The post describes the steps and how it went.
+
+links:
+- site: Blog (ES)
+  url: https://mscosentino.blogspot.com/2009/10/windows-7-en-mi-tablet.html
+- site: Blog (EN)
+  url: https://mscosentino-en.blogspot.com/2009/10/windows-7-on-my-tablet.html

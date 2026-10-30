@@ -1,0 +1,14 @@
+title: MMM-PictureRotator
+kind: software
+summary.es: Módulo de MagicMirror que rota imágenes de distintas fuentes.
+summary.en: A MagicMirror module that rotates pictures from different sources.
+
+body:
+- es: Lo creé para mostrar capturas de cámaras Foscam en un espejo inteligente, pero sirve para mostrar imágenes de casi cualquier URL.
+  en: I created it to show snapshots from Foscam cameras on a smart mirror, but it can display images from almost any URL.
+- es: Se instala clonando el repositorio en la carpeta modules de MagicMirror y agregando una entrada en config.js con la lista de direcciones de imágenes y opciones como el intervalo de actualización, el ancho y el alto.
+  en: You install it by cloning the repository into the MagicMirror modules folder and adding an entry to config.js with the list of image URLs and options such as update interval, width and height.
+
+links:
+- site: GitHub
+  url: https://github.com/mok726/MMM-PictureRotator

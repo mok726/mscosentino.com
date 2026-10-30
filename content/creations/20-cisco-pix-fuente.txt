@@ -1,0 +1,21 @@
+title.es: Cambiar la fuente de un Cisco PIX 506e
+title.en: Replacing the power supply of a Cisco PIX 506e
+kind: guide
+when.es: Instructables, junio de 2011
+when.en: Instructables, June 2011
+summary.es: Mi primer Instructable: cómo alimentar un firewall Cisco PIX 506e con una fuente AT de una computadora descartada.
+summary.en: My first Instructable: how to power a Cisco PIX 506e firewall with an AT power supply from a discarded computer.
+
+body:
+- es: Tenía un Cisco PIX 506e como firewall de mi red hogareña y un día dejó de funcionar: la fuente estaba muerta. No encontré proveedores en Argentina, y traerla desde afuera encarecía mucho la solución, así que busqué alternativas.
+  en: I had a Cisco PIX 506e as the firewall of my home network and one day it stopped working: the power supply was dead. I could not find suppliers in Argentina, and importing one made the fix much more expensive, so I looked for alternatives.
+- es: La guía, de 10 pasos, muestra cómo adapté una fuente tipo AT de una computadora vieja para alimentar el PIX sin modificar el cable ni la fuente original, por si algún día la quiero reparar.
+  en: The 10-step guide shows how I adapted an old AT-type power supply from a discarded computer to power the PIX without modifying the original cable or brick, in case I ever want to have it repaired.
+- es: Está publicada en las categorías Circuits y Reuse de Instructables.
+  en: It is published in the Circuits and Reuse categories of Instructables.
+
+links:
+- site: Instructables
+  url: https://www.instructables.com/Replacing-the-Power-supply-for-a-Cisco-Pix-506e
+- site: Mi perfil en Instructables
+  url: https://www.instructables.com/member/marianok

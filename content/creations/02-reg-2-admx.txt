@@ -1,0 +1,21 @@
+title: REG_2_ADMX
+kind: software
+when: 2010
+summary.es: Convierte archivos de registro (.reg) en plantillas de directiva ADMX/ADML para usar con las directivas de grupo (GPO). Escrito en VBScript.
+summary.en: Converts registry (.reg) files into ADMX/ADML policy templates for use with Group Policy (GPO). Written in VBScript.
+
+body:
+- es: Nació de una necesidad concreta: aplicar archivos .reg grandes a más de 1.400 sistemas usando directivas de grupo, sin armar plantillas a mano y sin perder después el rastro de qué significaba cada valor.
+  en: It came from a concrete need: applying large .reg files to 1,400+ systems through Group Policy, without building templates by hand and without later losing track of what each value meant.
+- es: Un intento anterior con el formato ADM me pareció demasiado complejo, así que lo retomé con el formato moderno ADMX.
+  en: An earlier attempt with the ADM format seemed too complex, so I picked it up again with the modern ADMX format.
+- es: El proyecto tiene su repositorio en GitHub, con 4 estrellas, y lo conté en una entrada de mi blog (en español e inglés).
+  en: The project has its repository on GitHub, with 4 stars, and I wrote it up in a blog post (in Spanish and English).
+
+links:
+- site: GitHub
+  url: https://github.com/mok726/Convert-Registry-files-.reg-into-ADMX-ADML-files-for-GPO
+- site: Blog (ES)
+  url: https://mscosentino.blogspot.com/2010/02/convertir-archivos-reg-en-admx.html
+- site: Blog (EN)
+  url: https://mscosentino-en.blogspot.com/2010/02/convert-registry-file-to-admx-policy.html

@@ -1,0 +1,13 @@
+title.es: Sello en relieve del lobo — Manada Lobos Audaces
+title.en: Wolf embossing stamp — Lobos Audaces cub pack
+kind: 3d
+summary.es: Versión personalizada de un sello de lobo en relieve, hecha con el personalizador de Thingiverse, para la manada Lobos Audaces.
+summary.en: A customized version of a wolf embossing stamp, made with the Thingiverse Customizer, for the Lobos Audaces cub pack.
+
+body:
+- es: Es una versión personalizada de un diseño existente (thing 1921006), creada con el personalizador de Thingiverse, con el problema del personalizador corregido.
+  en: It is a customized version of an existing design (thing 1921006), created with the Thingiverse Customizer, with the Customizer issue fixed.
+
+links:
+- site: Thingiverse
+  url: https://www.thingiverse.com/thing:5532488

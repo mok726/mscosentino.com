@@ -12,7 +12,8 @@ QUÉ ARCHIVO EDITAR
   home.txt            Página de inicio (Sobre mí, línea de tiempo "Desde 2015")
   cv.txt              Página Experiencia (estudios, reconocimientos, idiomas)
   jobs/NN-nombre.txt  Un archivo por trabajo (cada uno tiene su propia página)
-  projects.txt        Proyectos
+  projects.txt        Página Proyectos (perfiles, colecciones de Thingiverse, otros repos)
+  creations/NN-x.txt  Una página por creación: software, diseños 3D y guías
   courses.txt         Cursos
   certifications.txt  Certificaciones
   events.txt          Eventos
@@ -56,6 +57,10 @@ QUÉ HACER EN LOS CASOS COMUNES
 * Agregar un trabajo: copiá un archivo de content/jobs/, ponele un nombre nuevo
   como 13-mi-empresa.txt y editá su contenido. El número solo ordena la lista
   (01 sale primero). El nombre sin el número es la dirección de su página.
+* Agregar una creación (repo, diseño 3D, guía): copiá un archivo de content/creations/,
+  ponele nombre nuevo (24-mi-diseno.txt) y editalo. "kind" es software, 3d o guide
+  y define el grupo y el ícono en la página Proyectos. Los enlaces van en "links:".
+  Si varias piezas parecidas van juntas, listalas en "items:" dentro de una sola creación.
 * Quitar algo: borrá el ítem completo (sus líneas "- ..." y las sangradas).
 * Agregar una foto a un trabajo: copiá la foto a site/assets/photos/ (achicala antes,
   unos 1200 px de ancho) y agregá un bloque "photos:" como el de 01-att.txt.

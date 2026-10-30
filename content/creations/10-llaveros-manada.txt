@@ -1,0 +1,15 @@
+title.es: Llaveros de la manada scout
+title.en: Scout cub pack keychains
+kind: 3d
+summary.es: Diseño personalizable en OpenSCAD para generar llaveros con nombres, pensado para una manada scout.
+summary.en: Customizable OpenSCAD design for generating name keychains, made for a scout cub pack.
+
+body:
+- es: El diseño permite generar llaveros con distintos nombres. Generé de antemano la mayoría de los nombres relacionados con la manada, así que es probable que el que buscás ya esté en la lista de archivos listos para imprimir.
+  en: The design generates keychains with different names. I pre-generated most of the names related to the cub pack, so the one you need may already be in the list of ready-to-print files.
+- es: Si el personalizador de Thingiverse no muestra la imagen, se puede bajar el script .scad y las imágenes .svg y ejecutarlos localmente con OpenSCAD.
+  en: If the Thingiverse Customizer does not show the image, you can download the .scad script and the .svg images and run them locally with OpenSCAD.
+
+links:
+- site: Thingiverse
+  url: https://www.thingiverse.com/thing:6171710

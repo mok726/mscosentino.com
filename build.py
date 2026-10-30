@@ -277,6 +277,73 @@ def job_page(j):
 
 
 # =====================================================================
+# Creaciones: una página por archivo de content/creations/, en /projects/<slug>.html
+# =====================================================================
+KIND_ICON = {"software": "code", "3d": "cube", "guide": "book"}
+
+
+def load_creations():
+    out = []
+    folder = os.path.join(CONTENT, "creations")
+    for f in sorted(os.listdir(folder)):
+        if not f.endswith(".txt"):
+            continue
+        c = load(os.path.join(folder, f))
+        c["slug"] = re.sub(r"^\d+-", "", f[:-4])
+        if c["kind"] not in KIND_ICON:
+            raise SystemExit(
+                f"Error: 'kind' en {c.path} debe ser uno de: {', '.join(KIND_ICON)} (dice '{c['kind']}')"
+            )
+        out.append(c)
+    return out
+
+
+def plain_text(x, lang="es"):
+    """Texto sin HTML, para el <title> de la página."""
+    return x.get(lang, x.get("es", x.get("en", ""))) if isinstance(x, dict) else x
+
+
+def link_btn(link, primary=False):
+    label = T(link) if get(link, "es") or get(link, "en") else esc(link["site"])
+    return btn(link["url"], "link", label, primary=primary)
+
+
+def item_html(i):
+    name, url = i["name"], get(i, "url")
+    if not url:
+        link = f"<strong>{T(name)}</strong>"
+    elif isinstance(name, dict) or isinstance(url, dict):
+        link = "".join(
+            f'<span lang="{lg}"><a href="{plain_text(url, lg)}">{esc(plain_text(name, lg))}</a></span>' for lg in ("es", "en")
+        )
+    else:
+        link = f'<a href="{url}">{esc(name)}</a>'
+    return f"<li>{link}" + (f" — {T(i)}" if get(i, "es") or get(i, "en") else "") + "</li>"
+
+
+def creation_page(c):
+    parts = [f'<p class="crumb"><a href="/projects.html">← {T(ui["nav_projects"])}</a></p>', f"<h1>{T(c['title'])}</h1>"]
+    parts.append(f'<p class="lead">{joined(T(ui["kind_" + c["kind"]]), T(c["when"]) if get(c, "when") else "")}</p>')
+    parts.append(f"<p>{T(c['summary'])}</p>")
+    parts += [f"<p>{T(p)}</p>" for p in get(c, "body", [])]
+    if get(c, "items"):
+        parts.append(f'<h2>{T(ui["includes"])}</h2><ul class="plain">{"".join(item_html(i) for i in c["items"])}</ul>')
+    links = list(get(c, "links", []))
+    if c["kind"] == "3d":
+        links.append({"site": "Thingiverse", "url": site["thingiverse"] + "/collections",
+                      "es": "Mis colecciones en Thingiverse", "en": "My collections on Thingiverse"})
+        links.append({"site": "Printables", "url": site["printables"],
+                      "es": "Mi perfil en Printables", "en": "My Printables profile"})
+    if links:
+        parts.append(
+            f'<h2>{T(ui["links"])}</h2><p class="links">'
+            + "".join(link_btn(l, n == 0) for n, l in enumerate(links))
+            + "</p>"
+        )
+    return "\n".join(parts)
+
+
+# =====================================================================
 # Páginas
 # =====================================================================
 def home_body(c):
@@ -346,24 +413,48 @@ def cv_body(c, jobs):
 """
 
 
-def projects_body(c):
-    cards = ""
-    for p in c["projects"]:
-        title = esc(p["name"]) + (f' <small>{esc(p["years"])}</small>' if get(p, "years") else "")
-        inner = f'{icon(get(p, "icon", "code"))}<h3>{title}</h3><p>{T(p)}</p>'
-        cards += f'<a class="card" href="{p["url"]}">{inner}</a>' if get(p, "url") else f'<div class="card">{inner}</div>'
+def project_card(c, featured=False):
+    return (
+        f'<a class="card{" featured" if featured else ""}" href="/projects/{c["slug"]}.html">'
+        f'{icon(KIND_ICON[c["kind"]])}<h3>{T(c["title"])}</h3><p>{T(c["summary"])}</p></a>'
+    )
+
+
+def projects_body(c, creations):
+    by_slug = {x["slug"]: x for x in creations}
+    feat = by_slug.get(c["featured"])
+    if not feat:
+        raise SystemExit(f"Error: 'featured' en {c.path} dice '{c['featured']}', pero no hay esa creación en content/creations/")
+    sections = ""
+    for s in c["sections"]:
+        mine = [x for x in creations if x["kind"] == s["kind"] and x is not feat]
+        if not mine:
+            continue
+        note = f"<p>{T(s['note'])}</p>" if get(s, "note") else ""
+        sections += (
+            f'<h2 class="projects-sec">{T(s["title"])}</h2>{note}'
+            f'<div class="cards">{"".join(project_card(x) for x in mine)}</div>'
+        )
     tags = "".join(f'<span class="tag">{esc(t)}</span>' for t in c["other"])
+    profiles = "".join(f'<li><a href="{p["url"]}">{esc(p["site"])}</a> — {T(p)}</li>' for p in c["profiles"])
+    colls = "".join(f'<a class="tag" href="{x["url"]}">{esc(x["name"])} ({esc(x["count"])})</a>' for x in c["collections"])
     repos = "".join(f'<li><a href="{r["url"]}">{esc(r["name"])}</a> — {T(r)}</li>' for r in c["github"])
     return f"""
 <h1>{T(c["heading"])}</h1>
 <p class="lead">{T(c["lead"])}</p>
 
-<div class="cards">
-  {cards}
-</div>
-
+<h2>{T(c["featured_label"])}</h2>
+<div class="cards">{project_card(feat, True)}</div>
+{sections}
 <h2>{T(c["other_title"])}</h2>
 <p>{tags}</p>
+
+<h2>{T(c["profiles_title"])}</h2>
+<ul class="plain">{profiles}</ul>
+
+<h2>{T(c["collections_title"])}</h2>
+<p>{T(c["collections_note"])}</p>
+<p>{colls}</p>
 
 <h2>{T(c["github_title"])}</h2>
 <ul class="plain">{repos}</ul>
@@ -442,7 +533,7 @@ def scout_body(c):
 PAGES = [
     ("index.html", "home", home_body),
     ("cv.html", "cv", None),
-    ("projects.html", "projects", projects_body),
+    ("projects.html", "projects", None),
     ("courses.html", "courses", courses_body),
     ("certifications.html", "certifications", certs_body),
     ("events.html", "events", events_body),
@@ -450,10 +541,17 @@ PAGES = [
 ]
 
 jobs = load_jobs()
+creations = load_creations()
 os.makedirs(os.path.join(OUT, "jobs"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "projects"), exist_ok=True)
 for path, name, body_fn in PAGES:
     c = load(os.path.join(CONTENT, name + ".txt"))
-    body = cv_body(c, jobs) if name == "cv" else body_fn(c)
+    if name == "cv":
+        body = cv_body(c, jobs)
+    elif name == "projects":
+        body = projects_body(c, creations)
+    else:
+        body = body_fn(c)
     with open(os.path.join(OUT, path), "w", encoding="utf8") as fh:
         fh.write(page(path, path, c["title"], c["desc"], body))
 for j in jobs:
@@ -461,4 +559,7 @@ for j in jobs:
     desc = {"es": f"{company} — experiencia laboral.", "en": f"{company} — work experience."}
     with open(os.path.join(OUT, "jobs", j["slug"] + ".html"), "w", encoding="utf8") as fh:
         fh.write(page(f"jobs/{j['slug']}.html", "cv.html", company, desc, job_page(j)))
-print("ok", len(PAGES) + len(jobs), "pages")
+for c in creations:
+    with open(os.path.join(OUT, "projects", c["slug"] + ".html"), "w", encoding="utf8") as fh:
+        fh.write(page(f"projects/{c['slug']}.html", "projects.html", plain_text(c["title"]), c["summary"], creation_page(c)))
+print("ok", len(PAGES) + len(jobs) + len(creations), "pages")

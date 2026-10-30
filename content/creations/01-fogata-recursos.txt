@@ -1,0 +1,27 @@
+# UNA CREACIÓN. El número del nombre solo ordena; el resto es la dirección de la página.
+# kind: software | 3d | guide   (define el grupo y el ícono). Reglas: content/LEEME.txt
+
+title: Fogata de Recursos
+kind: software
+when.es: Versión beta: abril de 2026
+when.en: Beta release: April 2026
+summary.es: Biblioteca abierta de actividades scouts, recursos educativos y propuestas pedagógicas para un mundo mejor.
+summary.en: An open library of scout activities, educational resources and teaching proposals for a better world.
+
+body:
+- es: Nació como un esfuerzo personal para documentar actividades para mi manada de Lobatos y Lobeznas. Programas como GoSolar, Campeones por la Naturaleza y Planeta Sano me mostraron cuánto material valioso estaba disperso, y decidí reunirlo, ordenarlo y digitalizarlo.
+  en: It began as a personal effort to document activities for my cub pack. Programs such as GoSolar, Campeones por la Naturaleza and Planeta Sano showed me how much valuable material was scattered around, and I decided to gather it, organize it and digitize it.
+- es: Cada actividad tiene una ficha estandarizada, inspirada en los Kits de Acción de scout.org, y se puede buscar por tema, palabra clave, edad, rama scout, valores, insignia y Objetivo de Desarrollo Sostenible. Hoy el sitio reúne más de 1.000 actividades, 22 insignias, 17 ODS y 5 ramas scouts.
+  en: Every activity has a standardized card, inspired by the scout.org Action Kits, and can be searched by topic, keyword, age, scout branch, values, badge and Sustainable Development Goal. The site now holds more than 1,000 activities, 22 badges, 17 SDGs and 5 scout branches.
+- es: Muchas actividades están adaptadas de YUNGA, scout.org y otros programas educativos, con su atribución. El acceso es libre y gratuito, para educadores scouts y no scouts.
+  en: Many activities are adapted from YUNGA, scout.org and other educational programs, with attribution. Access is free and open, for scout and non-scout educators alike.
+- es: La versión beta salió en abril de 2026. Muchas actividades son todavía borradores convertidos automáticamente que esperan revisión manual, y sigo trabajando en las atribuciones y en materiales de apoyo como plantillas y archivos adicionales.
+  en: The beta was released in April 2026. Many activities are still drafts converted automatically and awaiting manual review, and I keep working on attributions and supporting material such as templates and extra files.
+- es: El código es MIT y el contenido propio es CC BY-NC-SA 4.0; el material de terceros conserva su licencia original. El sitio se genera con Eleventy, un generador de sitios estáticos.
+  en: The code is MIT and my own content is CC BY-NC-SA 4.0; third-party material keeps its original license. The site is built with Eleventy, a static site generator.
+
+links:
+- site: Fogata de Recursos
+  url: https://mok726.github.io/fogata-recursos/
+- site: GitHub
+  url: https://github.com/mok726/fogata-recursos

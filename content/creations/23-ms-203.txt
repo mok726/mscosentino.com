@@ -1,0 +1,26 @@
+title.es: Material de estudio para el examen MS-203
+title.en: Study material for the MS-203 exam
+kind: guide
+when: 2020 – 2021
+summary.es: Listas de enlaces a documentación de Microsoft para estudiar Microsoft 365: Messaging (MS-203).
+summary.en: Curated lists of Microsoft documentation links for studying Microsoft 365: Messaging (MS-203).
+
+body:
+- es: Dos entradas de mi blog (en inglés) con enlaces agrupados por tema, para estudiar la certificación Microsoft 365 Certified: Messaging Administrator Associate. Casi todos apuntan a documentación de Microsoft y referencias de PowerShell.
+  en: Two blog posts with links grouped by topic, for studying the Microsoft 365 Certified: Messaging Administrator Associate certification. Most point to Microsoft documentation and PowerShell references.
+- es: Los temas incluyen despliegues híbridos, migraciones, carpetas públicas, protección contra amenazas, cumplimiento y eDiscovery, listas de direcciones, dispositivos móviles y flujo de correo.
+  en: Topics include hybrid deployments, migrations, public folders, threat protection, compliance and eDiscovery, address lists, mobile devices and mail flow.
+
+items:
+- name: Microsoft 365 Messaging (MS-203) study links
+  url: https://mscosentino-en.blogspot.com/2020/12/microsoft-365-messaging-ms-203-study.html
+  es: diciembre de 2020.
+  en: December 2020.
+- name: MS-203 reference links
+  url: https://mscosentino-en.blogspot.com/2021/01/ms-203-reference-links.html
+  es: enero de 2021.
+  en: January 2021.
+
+links:
+- site: Blog (EN)
+  url: https://mscosentino-en.blogspot.com/

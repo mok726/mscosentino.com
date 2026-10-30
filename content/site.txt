@@ -14,3 +14,8 @@ facebook: https://www.facebook.com/mscosentino
 x: https://x.com/mok726
 x_work: https://x.com/MCTArgentina
 x_work_label: MCT Argentina
+
+# Perfiles de creación
+thingiverse: https://www.thingiverse.com/marianok
+printables: https://www.printables.com/@marianok_884402
+instructables: https://www.instructables.com/member/marianok

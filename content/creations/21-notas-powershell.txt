@@ -1,0 +1,36 @@
+title.es: Notas de PowerShell
+title.en: PowerShell notes
+kind: guide
+when: 2008 – 2011
+summary.es: Tres notas de “Cosas que aprendí” sobre PowerShell, escritas mientras armaba scripts de administración para el trabajo.
+summary.en: Three “Things I learned” notes about PowerShell, written while building administration scripts for work.
+
+body:
+- es: En mi blog empecé a anotar las cosas interesantes que aprendía, sobre todo las que me habían costado entender. Estas tres son de PowerShell.
+  en: On my blog I started jotting down the interesting things I learned, especially the ones that took me a while to understand. These three are about PowerShell.
+
+items:
+- name.es: El PATH en PowerShell (2008)
+  name.en: The PATH in PowerShell (2008)
+  url.es: https://mscosentino.blogspot.com/2008/07/el-path-en-powershell.html
+  url.en: https://mscosentino-en.blogspot.com/2008/07/path-in-powershell.html
+  es: para ejecutar un script como si fuera un comando, su carpeta tiene que estar en el PATH, aunque estés parado en esa carpeta.
+  en: to run a script as if it were a command, its folder must be in the PATH, even when you are standing in that folder.
+- name.es: Nivel de confirmación (2008)
+  name.en: Confirmation level (2008)
+  url.es: https://mscosentino.blogspot.com/2008/07/nivel-de-confirmacin.html
+  url.en: https://mscosentino-en.blogspot.com/2008/07/powershell-confirmation-level.html
+  es: el entorno de PowerShell de Exchange tiene $ConfirmPreference en High, por eso pedía confirmación sin que la pidiera; cómo cambiarlo solo durante el script.
+  en: the Exchange PowerShell environment sets $ConfirmPreference to High, which is why it asked for confirmation unprompted; how to change it only for the duration of a script.
+- name.es: Acceder a internet por medio de un proxy (2011)
+  name.en: Accessing the internet through a proxy (2011)
+  url.es: https://mscosentino.blogspot.com/2011/01/powershell-acceder-internet-por-medio.html
+  url.en: https://mscosentino-en.blogspot.com/2011/01/powershell-accessing-internet-thru.html
+  es: cuatro líneas para hacer que un script que descarga datos funcione detrás de un proxy.
+  en: four lines to make a script that downloads data work behind a proxy.
+
+links:
+- site: Blog (ES)
+  url: https://mscosentino.blogspot.com/search/label/Powershell
+- site: Blog (EN)
+  url: https://mscosentino-en.blogspot.com/search/label/Powershell

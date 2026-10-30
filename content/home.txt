@@ -66,8 +66,8 @@ timeline:
 # Tarjetas de acceso a cada sección (el título sale del menú, ver ui.txt).
 card_cv.es: Trabajos, estudios y reconocimientos.
 card_cv.en: Jobs, education and recognitions.
-card_projects.es: TiVo AR, XMLTV y otros desarrollos.
-card_projects.en: TiVo AR, XMLTV and other developments.
+card_projects.es: Fogata de Recursos, diseños 3D, herramientas y guías.
+card_projects.en: Fogata de Recursos, 3D designs, tools and guides.
 card_courses.es: Cursos y seminarios que hice.
 card_courses.en: Courses and seminars I took.
 card_certs.es: Credenciales Microsoft.

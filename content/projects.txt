@@ -1,58 +1,163 @@
-# PÁGINA "PROYECTOS".
+# PÁGINA "PROYECTOS". Cada creación tiene su propia página en content/creations/.
+# Para agregar una creación: copiá un archivo de content/creations/ (ver content/LEEME.txt).
 
 title: Proyectos
-desc.es: Proyectos y desarrollos.
-desc.en: Projects and developments.
+desc.es: Proyectos, diseños 3D, guías y desarrollos de Mariano S. Cosentino.
+desc.en: Projects, 3D designs, guides and developments by Mariano S. Cosentino.
 
 heading.es: Proyectos
 heading.en: Projects
-lead.es: Algunos desarrollos propios y contribuciones.
-lead.en: Some of my own developments and contributions.
+lead.es: Software, diseños 3D, guías y notas técnicas que creé a lo largo de los años. Cada una tiene su propia página, con enlaces al original.
+lead.en: Software, 3D designs, guides and technical notes I have created over the years. Each one has its own page, with links to the original.
 
-# Tarjetas. "icon" puede ser code o github. Si tiene "url", la tarjeta es un enlace.
-projects:
-- name: TiVo AR
-  years: (2005–2019)
-  icon: code
-  es: Adaptación de equipos TiVo de Estados Unidos para funcionar en Argentina.
-  en: Adapting US TiVo units to work in Argentina.
-- name: XMLTV · TV_GRAB_AR
-  years: (2007–2019)
-  icon: code
-  es: Mantenimiento de los módulos de XMLTV para la grilla de TV argentina.
-  en: Maintenance of the XMLTV modules for Argentine TV listings.
-- name: REG_2_ADMX
-  icon: github
-  url: https://github.com/mok726/Convert-Registry-files-.reg-into-ADMX-ADML-files-for-GPO
-  es: Convierte archivos .reg en plantillas ADMX/ADML para GPO (VBScript).
-  en: Converts .reg files into ADMX/ADML templates for GPO (VBScript).
+# Creación destacada (nombre del archivo en content/creations/, sin el número ni .txt)
+featured: fogata-recursos
+featured_label.es: Proyecto destacado
+featured_label.en: Featured project
+
+# Grupos de creaciones, en el orden en que salen. "kind" debe coincidir con el de cada creación.
+sections:
+- kind: software
+  title.es: Software y herramientas
+  title.en: Software and tools
+- kind: 3d
+  title.es: Diseños 3D
+  title.en: 3D designs
+  note.es: Piezas que diseñé y publico para imprimir. Cuando varias son parecidas y van juntas, comparten una página.
+  note.en: Parts I designed and publish to be printed. When several are similar and belong together, they share one page.
+- kind: guide
+  title.es: Guías y notas técnicas
+  title.en: Guides and technical notes
+  note.es: Tutoriales y apuntes que escribí en Instructables y en mis blogs.
+  note.en: Tutorials and notes I wrote on Instructables and on my blogs.
 
 other_title.es: Otros desarrollos
 other_title.en: Other developments
 # Etiquetas sueltas, una por línea.
 other:
-- Add-URL2URLSET
 - Blog Replicator
 - SEND2BEEPER
 - ACD
 - SACE
 - MAP_95 / MAP_9x
 
-github_title.es: En GitHub
-github_title.en: On GitHub
+profiles_title.es: Mis perfiles
+profiles_title.en: My profiles
+profiles:
+- site: GitHub
+  url: https://github.com/mok726
+  es: Repositorios de código.
+  en: Code repositories.
+- site: Thingiverse
+  url: https://www.thingiverse.com/marianok
+  es: Mis diseños 3D y mis colecciones.
+  en: My 3D designs and my collections.
+- site: Printables
+  url: https://www.printables.com/@marianok_884402
+  es: Mi perfil en Printables.
+  en: My Printables profile.
+- site: Instructables
+  url: https://www.instructables.com/member/marianok
+  es: Mis guías paso a paso.
+  en: My step-by-step guides.
+- site: Blog (ES)
+  url: https://mscosentino.blogspot.com/
+  es: “Mi Punto de Vista…”, mi blog en español.
+  en: “Mi Punto de Vista…”, my blog in Spanish.
+- site: Blog (EN)
+  url: https://mscosentino-en.blogspot.com/
+  es: “My Point of View…”, mi blog en inglés.
+  en: “My Point of View…”, my blog in English.
+
+collections_title.es: Mis colecciones de Thingiverse
+collections_title.en: My Thingiverse collections
+collections_note.es: Colecciones que armé con diseños míos y de otros autores (entre paréntesis, la cantidad de diseños).
+collections_note.en: Collections I put together with my own designs and other authors’ (the number of designs is in parentheses).
+collections:
+- name: Scouts
+  url: https://www.thingiverse.com/marianok/collections/16079211/things
+  count: 41
+- name: MakerParts 2 All-Metal
+  url: https://www.thingiverse.com/marianok/collections/15106682/things
+  count: 47
+- name: Tools
+  url: https://www.thingiverse.com/marianok/collections/16288199/things
+  count: 53
+- name: Interesting
+  url: https://www.thingiverse.com/marianok/collections/12054138/things
+  count: 80
+- name: Toys
+  url: https://www.thingiverse.com/marianok/collections/12053280/things
+  count: 26
+- name: Explorer
+  url: https://www.thingiverse.com/marianok/collections/9171640/things
+  count: 24
+- name: Things to Make
+  url: https://www.thingiverse.com/marianok/collections/9171615/things
+  count: 20
+- name: Cocina
+  url: https://www.thingiverse.com/marianok/collections/13114848/things
+  count: 19
+- name: GoPro
+  url: https://www.thingiverse.com/marianok/collections/23475270/things
+  count: 15
+- name: CASA
+  url: https://www.thingiverse.com/marianok/collections/23475768/things
+  count: 14
+- name: Criollos
+  url: https://www.thingiverse.com/marianok/collections/19407532/things
+  count: 11
+- name: Harry Potter
+  url: https://www.thingiverse.com/marianok/collections/18418560/things
+  count: 11
+- name: Already Printed
+  url: https://www.thingiverse.com/marianok/collections/13651979/things
+  count: 11
+- name: Roomba
+  url: https://www.thingiverse.com/marianok/collections/19485101/things
+  count: 8
+- name: UP
+  url: https://www.thingiverse.com/marianok/collections/14461753/things
+  count: 8
+- name: Jardin
+  url: https://www.thingiverse.com/marianok/collections/26119006/things
+  count: 7
+- name: HAM
+  url: https://www.thingiverse.com/marianok/collections/32599106/things
+  count: 1
+- name: Autos
+  url: https://www.thingiverse.com/marianok/collections/30082999/things
+  count: 1
+- name: Loft
+  url: https://www.thingiverse.com/marianok/collections/19476292/things
+  count: 1
+- name: Romi
+  url: https://www.thingiverse.com/marianok/collections/16362571/things
+  count: 1
+
+github_title.es: Otros repositorios en GitHub
+github_title.en: Other repositories on GitHub
 github:
-- name: MMM-PictureRotator
-  url: https://github.com/mok726/MMM-PictureRotator
-  es: módulo de MagicMirror que rota imágenes de distintas fuentes
-  en: MagicMirror module that rotates images from several sources
+- name: mscosentino.com
+  url: https://github.com/mok726/mscosentino.com
+  es: el código de este sitio web (estático, en español e inglés).
+  en: the source code of this website (static, in Spanish and English).
 - name: MMM-NetworkScanner
   url: https://github.com/mok726/MMM-NetworkScanner
-  es: fork; estado de dispositivos de red por MAC
-  en: fork; network device presence by MAC address
+  es: fork; estado de dispositivos de red por MAC.
+  en: fork; network device presence by MAC address.
+- name: MMM-EasyPix
+  url: https://github.com/mok726/MMM-EasyPix
+  es: fork; la forma más simple de mostrar imágenes en un espejo MagicMirror.
+  en: fork; the easiest way to show pictures on a MagicMirror.
 - name: ManagedPasswordFilter
   url: https://github.com/mok726/ManagedPasswordFilter
-  es: fork; filtro de contraseñas de Windows en código administrado
-  en: fork; Windows password filter in managed code
+  es: fork; filtro de contraseñas de Windows en código administrado.
+  en: fork; Windows password filter in managed code.
+- name: Backup_Technet_Gallery_Contrib
+  url: https://github.com/mok726/Backup_Technet_Gallery_Contrib
+  es: fork; script para respaldar tus contribuciones (o las de otro) en la TechNet Gallery.
+  en: fork; script to back up your (or someone else’s) TechNet Gallery contributions.
 
 all_github.es: Ver todos en GitHub
 all_github.en: See all on GitHub

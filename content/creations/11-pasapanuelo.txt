@@ -1,0 +1,19 @@
+title.es: Pasa pañuelo (canuto) del Grupo Scout-Guías “San Pablo”
+title.en: Neckerchief slide for the Scout-Guías “San Pablo” group
+kind: 3d
+summary.es: Pasa pañuelo impreso en 3D, remix de dos diseños, con el logo de nuestra comunidad y mi rol en la manada.
+summary.en: A 3D-printed neckerchief slide, a remix of two designs, with our community logo and my role in the cub pack.
+
+body:
+- es: Es un remix de “boy scouts neckerchief slide” (rheaghen) y “Wolf Cub Scout Neckerchief Slide” (singharmony), con algunos cambios.
+  en: It is a remix of “boy scouts neckerchief slide” by rheaghen and “Wolf Cub Scout Neckerchief Slide” by singharmony, with a few changes.
+- es: Como somos una comunidad mixta de scouts y guías, agregué el logo de la comunidad de un lado y mantuve la flor de lis del otro.
+  en: As we are a mixed scout and guides community, I added the community logo on one side and kept the fleur-de-lis on the other.
+- es: Como trabajo con la manada, quise que mi pasa pañuelo mostrara mi rol: Kotick, la foca blanca.
+  en: Since I work with the cub pack, I wanted my slide to show my role: Kotick, the white seal.
+- es: También quise poder imprimir varios y agregar el frente más tarde.
+  en: I also wanted to be able to print several and add the front at a later time.
+
+links:
+- site: Thingiverse
+  url: https://www.thingiverse.com/thing:5599232

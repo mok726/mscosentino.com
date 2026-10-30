@@ -1,0 +1,13 @@
+title.es: Colgador de escalera
+title.en: Ladder hanger
+kind: 3d
+summary.es: Escuadra para colgar una escalera de aluminio de un costado y sacarla del medio.
+summary.en: A bracket to hang an aluminum ladder out of the way.
+
+body:
+- es: La escalera de aluminio siempre estaba dando vueltas, así que diseñé esta escuadra para colgarla. Yo solo necesité un tornillo, para engancharla al estante de arriba, pero le agregué algunos agujeros extra por si hacen falta.
+  en: Our aluminum ladder was always in the way, so I designed this bracket to hang it. I only needed one screw, to hook it to the shelf above, but I added a few extra screw holes in case they are ever needed.
+
+links:
+- site: Thingiverse
+  url: https://www.thingiverse.com/thing:4459228

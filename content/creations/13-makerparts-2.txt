@@ -1,0 +1,33 @@
+title.es: Accesorios para la impresora MakerParts 2 All-Metal
+title.en: Accessories for the MakerParts 2 All-Metal printer
+kind: 3d
+summary.es: Soportes para el ventilador de capa y el sensor BLTouch, y contenedores de bolsillo, para mi impresora 3D MakerParts 2 All-Metal.
+summary.en: Layer fan and BLTouch sensor brackets, plus pocket containers, for my MakerParts 2 All-Metal 3D printer.
+
+body:
+- es: Cuatro diseños para mi impresora MakerParts 2 (All-Metal), la que uso para casi todo lo que publico. Los agrupé porque comparten propósito: mejorar y completar la máquina.
+  en: Four designs for my MakerParts 2 (All-Metal) printer, the one I use for most of what I publish. I grouped them because they share a purpose: improving and completing the machine.
+
+items:
+- name: Support Bracket for Layer Fan for MakerParts V2 All-Metal Printer
+  url: https://www.thingiverse.com/thing:4768786
+  es: soporte del ventilador de capa. Intenté usar el diseño de JMR3Done, pero tenía otra geometría y no encajaba, así que hice uno nuevo.
+  en: bracket for the layer fan. I first tried JMR3Done’s design, but its geometry differs and does not fit, so I made a new one.
+- name: Support Bracket for Layer Fan w/ BLTouch support for MakerParts V2 All-Metal Printer
+  url: https://www.thingiverse.com/thing:4768793
+  es: variante que monta el ventilador y un sensor BLTouch en la MK2 v2. Los valores de offset que me dieron fueron y = -35 y x = +5.
+  en: derivative that mounts the layer fan and a BLTouch sensor on the MK2 v2. The offsets I got were y = -35 and x = +5.
+- name: MK1 Layer Fan Holder w/ BLTouch support
+  url: https://www.thingiverse.com/thing:4768784
+  es: tomé el diseño de JMR3Done y le agregué un soporte para el sensor BLTouch. Lo imprimí, pero no pude comprobar su funcionamiento.
+  en: I took JMR3Done’s design and added a BLTouch sensor mount. I printed it, but could not verify how it works.
+- name: Pocket Containers for MK2 (Maker Parts 2 - All Metal)
+  url: https://www.thingiverse.com/thing:3880037
+  es: contenedores pequeños que encajan en las ranuras a cada lado de la cama de impresión, para guardar accesorios (como la llave Allen que siempre perdía).
+  en: small containers that fit the cutouts on each side of the print bed, to hold accessories (like the hex wrench I keep losing).
+
+links:
+- site: Thingiverse
+  url: https://www.thingiverse.com/marianok/collections/15106682/things
+  es: Colección MakerParts 2 All-Metal
+  en: MakerParts 2 All-Metal collection

@@ -1,0 +1,25 @@
+title.es: Tiradores de Harry Potter (cajón y placard)
+title.en: Harry Potter pulls (drawer and closet)
+kind: 3d
+summary.es: Un tirador de cajón con escudos de Hogwarts y un tirador de puerta de placard con las letras H y P, para el cuarto de mi hijo.
+summary.en: A drawer pull with Hogwarts crests and a closet door pull with the letters H and P, for my kid’s room.
+
+body:
+- es: Necesitaba perillas y tiradores con temática de Harry Potter para el cuarto de mi hijo y adapté diseños de otros autores a lo que necesitaba.
+  en: I needed Harry Potter themed knobs and pulls for my kid’s room, and I adapted other authors’ designs to what I needed.
+
+items:
+- name: Hogwarts Drawer pull
+  url: https://www.thingiverse.com/thing:4463588
+  es: partí de los diseños de shadowbuilder y FlamesEagleX y creé un separador para pegar a ellos y atornillar al frente del cajón. Escalé los modelos a 50 x 40 x 10 mm.
+  en: starting from shadowbuilder’s and FlamesEagleX’s designs, I created a spacer to glue to them and screw to the drawer front. I scaled the models to 50 x 40 x 10 mm.
+- name: Harry Potter Closet door Pull
+  url: https://www.thingiverse.com/thing:4462834
+  es: parte del diseño de souviksaha, redimensionado, con dos agujeros atrás para imanes de neodimio y separado en H y P para usar una letra en cada puerta, con un STL por letra para que entre en una cama de 20 x 20 cm.
+  en: based on souviksaha’s design, resized, with two holes on the back for neodymium magnets, split into H and P so each door gets a letter, with one STL per letter to fit a 20 x 20 cm bed.
+
+links:
+- site: Thingiverse
+  url: https://www.thingiverse.com/marianok/collections/18418560/things
+  es: Colección Harry Potter
+  en: Harry Potter collection

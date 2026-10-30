@@ -131,9 +131,13 @@ footer.site { border-top: 1px solid var(--line); color: var(--muted); font-size:
 .i-facebook { --m:url(icons/facebook.svg) } .i-x { --m:url(icons/x.svg) } .i-mail { --m:url(icons/mail.svg) }
 .i-work { --m:url(icons/work.svg) } .i-code { --m:url(icons/code.svg) } .i-school { --m:url(icons/school.svg) }
 .i-verified { --m:url(icons/verified.svg) } .i-event { --m:url(icons/event.svg) } .i-scout { --m:url(icons/scout.svg) }
+.i-cube { --m:url(icons/cube.svg) } .i-book { --m:url(icons/book.svg) } .i-link { --m:url(icons/link.svg) }
 .btn .ico { margin-right: 8px; }
 .card .ico { width: 28px; height: 28px; color: var(--accent); margin-bottom: 10px; display:block; }
 .hero .links { margin-top: 18px; }
+.card.featured { border-color: var(--accent); background: var(--accent-soft); }
+.card.featured h3 { font-size: 1.2rem; }
+.projects-sec { margin-top: 1.6em; }
 
 .social { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px; }
 .soc { display:inline-flex; align-items:center; gap:4px; width:auto; min-width:40px; height:40px; justify-content:center;

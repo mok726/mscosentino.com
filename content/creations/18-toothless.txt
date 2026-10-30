@@ -1,0 +1,15 @@
+title.es: Exprimidor de dentífrico de Chimuelo
+title.en: Toothless toothpaste squeezer
+kind: 3d
+summary.es: Exprimidor de pasta dental con la forma de Chimuelo, de “Cómo entrenar a tu dragón”, hecho a pedido de mi hijo.
+summary.en: A toothpaste squeezer shaped like Toothless from “How to Train Your Dragon”, made at my son’s request.
+
+body:
+- es: Mi hijo quería un exprimidor de dentífrico de Chimuelo. Tomé como base el cortador de galletas “Toothless-cookie-cutter” de matschi, lo rellené y le hice varias secciones caladas para darle un aspecto más interesante.
+  en: My son asked for a Toothless toothpaste squeezer. I used matschi’s “Toothless-cookie-cutter” as the base, filled it in (no longer a cookie cutter) and made several sections into holes to give it a more interesting look.
+- es: Me inspiré en el “Stormtrooper Toothpaste Squeezer” de Netsquash.
+  en: I took inspiration from the “Stormtrooper Toothpaste Squeezer” by Netsquash.
+
+links:
+- site: Thingiverse
+  url: https://www.thingiverse.com/thing:3890768

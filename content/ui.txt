@@ -23,3 +23,15 @@ accomplishments.es: Logros
 accomplishments.en: Accomplishments
 photos.es: Fotos
 photos.en: Photos
+
+# Páginas de cada creación (Proyectos)
+kind_software.es: Software
+kind_software.en: Software
+kind_3d.es: Diseño 3D
+kind_3d.en: 3D design
+kind_guide.es: Guía
+kind_guide.en: Guide
+includes.es: Incluye
+includes.en: Includes
+links.es: Enlaces
+links.en: Links

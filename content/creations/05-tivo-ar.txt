@@ -1,0 +1,25 @@
+title: TiVo AR y XMLTV
+kind: software
+when: 2005 – 2019
+summary.es: Adaptación de equipos TiVo de Estados Unidos para funcionar en Argentina y mantenimiento de los módulos de XMLTV para la grilla de TV argentina.
+summary.en: Adapting US TiVo units to work in Argentina and maintaining the XMLTV modules for Argentine TV listings.
+
+body:
+- es: El TiVo es una videograbadora sin cinta que descarga cada noche la grilla de programación y permite pausar la TV en vivo o grabar por título, actor o género. Es uno de los aparatos que más me fascinaron en Estados Unidos.
+  en: TiVo is a tape-less video recorder that downloads the TV listings every night and lets you pause live TV or record by title, actor or genre. It is one of the gadgets that fascinated me most in the USA.
+- es: En Argentina TiVo no ofrece servicio, así que participé en la comunidad de hackeo de TiVo y trabajé para que estos equipos funcionaran acá, con guía de programación local.
+  en: TiVo has no service in Argentina, so I took part in the TiVo hacking community and worked to make these units work here, with local program guide data.
+
+items:
+- name: TiVo AR
+  es: 2005 – 2019. Adaptación de equipos TiVo de Estados Unidos para funcionar en Argentina.
+  en: 2005 – 2019. Adapting US TiVo units to work in Argentina.
+- name: XMLTV · TV_GRAB_AR
+  es: 2007 – 2019. Mantenimiento de los módulos de XMLTV para la grilla de TV argentina.
+  en: 2007 – 2019. Maintenance of the XMLTV modules for Argentine TV listings.
+
+links:
+- site: Blog (ES)
+  url: https://mscosentino.blogspot.com/2011/08/tivo-redux.html
+- site: Blog (EN)
+  url: https://mscosentino-en.blogspot.com/2011/08/tivo-redux.html

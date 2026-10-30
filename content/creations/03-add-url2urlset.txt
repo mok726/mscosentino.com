@@ -1,0 +1,14 @@
+title: Add-URL2URLSET
+kind: software
+summary.es: Script de PowerShell que agrega una URL a un conjunto de URL (URL Set) de Microsoft ISA Server o TMG.
+summary.en: PowerShell script that adds a URL to an existing URL Set in Microsoft ISA Server or TMG.
+
+body:
+- es: Además de la URL, agrega sus subdominios, y avisa de las entradas que ya existen en lugar de duplicarlas.
+  en: Besides the URL it adds its subdomains, and it reports any entries that already exist instead of duplicating them.
+- es: Debe ejecutarse localmente en el servidor TMG, con el servicio de firewall en marcha.
+  en: It must be run locally on the TMG server, with the Firewall service running.
+
+links:
+- site: GitHub
+  url: https://github.com/mok726/Add-URL-to-a-URL-Set-in-ISA-TMG

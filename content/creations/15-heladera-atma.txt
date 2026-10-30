@@ -1,0 +1,23 @@
+title.es: Soportes para estantes de vidrio de heladera ATMA
+title.en: Glass shelf supports for an ATMA refrigerator
+kind: 3d
+summary.es: Soportes lateral y trasero para reponer los perfiles rotos de los estantes de vidrio de una heladera ATMA no-frost.
+summary.en: Side and rear supports to replace the broken profiles of the glass shelves in an ATMA no-frost refrigerator.
+
+body:
+- es: Los estantes de vidrio se apoyan en perfiles (uno delantero y otro trasero) que se encastran en las guías laterales. Esos perfiles son muy caros, difíciles de conseguir y se rompen con el tiempo.
+  en: The glass shelves rest on profiles (one at the front and one at the back) that slot into the side guides. Those profiles are very expensive, hard to find, and break over time.
+- es: Lo que diseñé es una especie de escuadra que se encastra en la misma muesca de la guía y sostiene el estante. Son dos piezas: una lateral y otra trasera. No recuerdo el modelo exacto de la heladera.
+  en: What I designed is a kind of bracket that slots into the same notch of the guide and holds the shelf. There are two parts: a side one and a rear one. I do not remember the exact refrigerator model.
+
+items:
+- name: Soporte Lateral Estante vidrio Heladera ATMA
+  url: https://www.thingiverse.com/thing:4492385
+- name: Soporte Trasero Estante vidrio Heladera ATMA
+  url: https://www.thingiverse.com/thing:4492393
+
+links:
+- site: Thingiverse
+  url: https://www.thingiverse.com/marianok/collections/23475768/things
+  es: Colección CASA
+  en: HOME collection
