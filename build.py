@@ -536,6 +536,12 @@ def cv_body(c, jobs):
 <h2>{T(c["recognitions_title"])}</h2>
 {ul(c["recognitions"])}
 
+<h2>{T(c["volunteer_title"])}</h2>
+{ul(c["volunteer"])}
+
+<h2>{T(c["orgs_title"])}</h2>
+{ul(c["orgs"])}
+
 <h2>{T(c["languages_title"])}</h2>
 <p>{T(c["languages"])}</p>
 """
@@ -590,6 +596,14 @@ def projects_body(c, creations):
 """
 
 
+def course_list(items, meta_key):
+    rows = "".join(
+        f"<li>{esc(i['title'])}" + (f' <span class="meta">· {esc(get(i, meta_key))}</span>' if get(i, meta_key) else "") + "</li>"
+        for i in items
+    )
+    return f'<ul class="plain">{rows}</ul>'
+
+
 def courses_body(c):
     hist = "".join(
         f'<li><strong>{T(h["title"])}</strong><span class="meta">{joined(esc(get(h, "date")), T(h["org"]))}</span></li>'
@@ -602,21 +616,33 @@ def courses_body(c):
 {ul(c["recent"])}
 <h2>{T(c["history_title"])}</h2>
 <ul class="timeline">{hist}</ul>
+<h2>{T(c["profile_title"])}</h2>
+{course_list(c["profile_courses"], "number")}
+<h2>{T(c["learning_title"])}</h2>
+<p>{T(c["learning_note"])}</p>
+{course_list(c["learning"], "date")}
+<h2>{T(c["paths_title"])}</h2>
+{course_list(c["learning_paths"], "date")}
 """
 
 
 def certs_body(c):
-    certs = "".join(
-        f'<details class="cert"><summary>{esc(x["name"])}</summary><p>'
-        + "".join(f'<span class="tag">{esc(i)}</span>' for i in x["items"])
-        + "</p></details>"
-        for x in c["certs"]
-    )
+    def group(x):
+        return (
+            f'<details class="cert"><summary>{esc(x["name"])}</summary><p>'
+            + "".join(f'<span class="tag">{esc(i)}</span>' for i in x["items"])
+            + "</p></details>"
+        )
+
+    certs = "".join(group(x) for x in c["certs"])
+    others = "".join(group(x) for x in c["other_certs"])
     return f"""
 <h1>{T(c["heading"])}</h1>
 <p class="lead">{T(c["lead"])}</p>
 <p><a href="{c["verify_url"]}">{T(c["verify_text"])} →</a></p>
 {certs}
+<h2>{T(c["other_title"])}</h2>
+{others}
 """
 
 

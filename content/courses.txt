@@ -93,3 +93,250 @@ history:
   org.en: Others
   title.es: Seguridad electrónica · Programación con Visual BASIC · Windows NT 4.0 Core Technologies
   title.en: Electronic Security · Programming with Visual BASIC · Windows NT 4.0 Core Technologies
+
+# Títulos de las secciones de abajo (cursos de LinkedIn)
+profile_title.es: Cursos en mi perfil de LinkedIn
+profile_title.en: Courses on my LinkedIn profile
+learning_title.es: LinkedIn Learning
+learning_title.en: LinkedIn Learning
+learning_note.es: Cursos completados en LinkedIn Learning. La fecha (mes/año) figura sólo en los que LinkedIn la registra.
+learning_note.en: Courses completed on LinkedIn Learning. The date (month/year) appears only where LinkedIn records it.
+paths_title.es: Rutas de aprendizaje y certificados profesionales
+paths_title.en: Learning paths and professional certificates
+
+# Cursos del perfil de LinkedIn (exportados de LinkedIn). "number" es el código del curso si lo hay.
+profile_courses:
+- title: Human Resource Management
+  number: BAM510
+- title: Human Relations
+  number: BAM501
+- title: Organizational Behavior
+  number: BAM515
+- title: Business Ethics
+  number: BAM530
+- title: Management Information Systems
+  number: BAM509
+- title: Employee Training And Development
+  number: BAM554
+- title: Financial Management
+  number: BAM513
+- title: Modern Management
+  number: BAM562
+- title: Project Management
+  number: BAM540
+- title: The Research Process
+  number: GRM697
+- title: Leadership
+  number: BAM550
+- title: Strategic Management
+  number: BAM560
+- title: Iniciación a la Docencia Universitaria
+- title: La Evaluación de los aprendizajes en la Universidad
+- title: AT&T Emergency Preparedness Training
+- title: Privacy and Information Security
+- title: Tendencias Prospectivas en Informática
+- title: Open Source Software License and Copyleft
+- title: Academia Latinoamericana de Seguridad - Modulo 1
+  number: Microsoft TechNet
+- title: Academia Latinoamericana de Seguridad - Módulo 2
+- title: Agile and Waterfall Blended Initiatives
+- title: Agile Application Change Management
+- title: Agile Ceremonies and Output
+- title: Agile Concepts & Competencies
+- title: Agile in IT
+- title: Agile Metrics
+- title: ASPR on the eGRC Platform
+- title: AT&T - Intellectual Property Training
+- title: AT&T Comp Intelligence Portal Training
+- title: AT&T Emergency Preparedness Training - 2016
+- title: AT&T Emergency Preparedness Training - 2017
+- title: Budgeting HMM v12
+- title: Business Execution: Crafting Strategy
+- title: Business Execution: Monitor Evaluate
+- title: Business Plan Development HMM v12
+- title: Cloud Computing Fundamentals
+- title: Cloud Governance
+- title: Cloud Openstack 1: Intro to AT&T's Plans
+- title: Cloud Openstack 2: Linux Basics
+- title: Cloud Openstack 3: Linux  in a VM
+- title: Cloud Openstack 4: Linux Dev Standard
+- title: Cloud Openstack 5: OpenStack IaaS Arch
+- title: Cloud Openstack 6: OpenStack IaaS Bus
+- title: Cloud Openstack 7: OpenStack Horizon GUI
+- title: Cloud Openstack 8: OpenStack Install
+- title: Cloud Openstack 9: Intro to Nova & APIs
+- title: Cloud Openstack 10:Join & Contribute
+- title: Cloud Openstack 11: AIC Reference Mat
+- title: Cloud Openstack 12: Python Org Intro
+- title: Cloud Openstack 14: OSI Basics
+
+# Cursos completados en LinkedIn Learning: primero los que tienen fecha (mes/año), luego el resto por orden alfabético.
+learning:
+- title: Learn to Vibe Code in 10 Minutes
+  date: 10/2026
+- title: Claude Code in Action by Anthropic
+  date: 10/2026
+- title: AI Product Security: Testing, Validation, and Maintenance
+  date: 09/2026
+- title: Deploying Exchange Server 2019
+  date: 01/2021
+- title: Exchange 2016: Coexistence, Hybrid Scenarios, Migration, and Federation
+  date: 01/2021
+- title: Exchange 2016: Compliance, Archiving, eDiscovery, and Auditing
+  date: 01/2021
+- title: Microsoft Exchange Server 2019: Administration
+  date: 01/2021
+- title: Microsoft Cloud Fundamentals: Exchange Online and Security
+  date: 01/2021
+- title: Learning Moodle 3.7
+  date: 12/2020
+- title: Learning Moodle 3.8
+  date: 12/2020
+- title: Learning Moodle 3.6
+  date: 12/2020
+- title: Learning Google Classroom 2016
+  date: 12/2020
+- title: Learning Moodle 3.4
+  date: 12/2020
+- title: Foundations of Learning Management Systems (LMS) (2018)
+  date: 12/2020
+- title: Flipping the Classroom
+  date: 12/2020
+- title: Learning Moodle 3.9
+  date: 12/2020
+- title: Moodle 3.2 Essential Training
+  date: 12/2020
+- title: Learning Management Systems (LMS) Quick Start
+  date: 12/2020
+- title: Learning Moodle 3.5
+  date: 12/2020
+- title: Learning SCORM and Tin Can API
+  date: 12/2020
+- title: Learning Moodle 3.3
+  date: 12/2020
+- title: Implementing a Hybrid and Secure Microsoft Messaging Platform
+  date: 10/2020
+- title: Planning and Configuring a Microsoft Messaging Platform
+  date: 10/2020
+- title: Fundamentos de ITIL: La estrategia de servicios
+  date: 03/2020
+- title: Reasonable Cybersecurity for Business Leaders
+  date: 08/2019
+- title: Data Science & Analytics Career Paths & Certifications: First Steps
+  date: 08/2019
+- title: Become a Chief of Staff
+  date: 08/2019
+- title: .NET Core avanzado (2019)
+- title: Advanced SQL for Data Scientists (2017)
+- title: Agilidad estratégica
+- title: AI and Digital Marketing Trends
+- title: Amazon Web Services para profesionales IT
+- title: Anthropic Claude Certified Architect Professional (CCAR-P) Cert Prep
+- title: Apache Spark Essential Training
+- title: Applied Machine Learning: Foundations (2019)
+- title: ASP.NET Core esencial
+- title: Azure Administration Essential Training (2019)
+- title: Big Data Foundations: Building Architecture and Teams
+- title: Blackboard Essential Training
+- title: Boost Your Problem-Solving Skills with Generative AI
+- title: Bootstrap 5 From Scratch: Build 5 Modern Websites
+- title: Cert Prep: FAA Part 107 Commercial Drone License (2017)
+- title: CompTIA Network+ (N10-007) Cert Prep: 4 Making TCP/IP Work
+- title: CompTIA Network+ (N10-007) Cert Prep: 5 Securing TCP/IP
+- title: Core Strategies for Teaching in Higher Ed
+- title: Creating an Amazing Syllabus
+- title: Critical Thinking for Better Judgment and Decision-Making
+- title: Cómo aprender del fracaso
+- title: Data Science Foundations: Fundamentals (2019)
+- title: Deploying Exchange Server 2016
+- title: Desarrollo de equipos IT: Trucos y consejos
+- title: Design Thinking for Project Managers
+- title: Digital Citizenship
+- title: Excel Data Visualization: Mastering 20+ Charts and Graphs
+- title: Exchange 2016: Client Access Services
+- title: Exchange 2016: Infrastructure, Recipients, and Security
+- title: Exchange 2016: Mailbox Databases
+- title: Exchange 2016: Transport Services
+- title: Executive Guide to Predictive Modeling Strategy at Scale
+- title: Fundamentos de la gestión de proyectos ágil (2017)
+- title: Gamification of Learning
+- title: Hands-On AI: Claude Code CLI for Non-Programmers
+- title: How to Make Strategic Thinking a Habit (2020)
+- title: iBooks Author for Teachers: Creating a Math Lesson
+- title: ITIL® Foundation 4 First Look
+- title: Leading and Working in Teams
+- title: Learning Data Analytics
+- title: Learning Data Governance
+- title: Learning How to Increase Learner Engagement
+- title: Learning Microsoft 365 Copilot for Work (2025)
+- title: Learning to Teach Online (2019)
+- title: Logic Pro Essential Training
+- title: Los cinco pasos del proceso creativo (2018)
+- title: Machine Learning and AI Foundations: Decision Trees with SPSS
+- title: Managing New Managers
+- title: Mastering Communications as a Leader
+- title: Microsoft Azure: Active Directory
+- title: Microsoft Azure: Architecting Azure Infrastructure
+- title: Microsoft Copilot Essentials by Microsoft Press
+- title: Microsoft Copilot: The Art of Prompt Writing
+- title: Microsoft Exchange Server 2016: Administration
+- title: Microsoft Exchange Server Essential Training: Installation and Configuration
+- title: Microsoft SQL Server 2016: Installation and Administration
+- title: Mixtape: Learning Highlights on Personal Effectiveness
+- title: Moodle: Assessing Learning
+- title: Moving Your Class Online Quickly and Efficiently
+- title: Nano Tips for Using Excel with Kat Norton
+- title: Office for Educators
+- title: Outlook: Efficient Email Management (2019)
+- title: Pitching Your Ideas Strategically
+- title: Power BI Essential Training (2020)
+- title: PowerPoint 365 for Educators
+- title: PowerPoint for Teachers: Creating Interactive Lessons
+- title: PowerPoint: Designing Better Slides (2017)
+- title: PowerShell for Exchange Administration
+- title: PowerShell: Functions for Advanced Automation
+- title: PowerShell: Scripting for Advanced Automation
+- title: Processing: Interactive Data Visualization
+- title: Project Management Foundations [2016]
+- title: Project Management Foundations: Small Projects
+- title: Project Management: Preventing Scope Creep
+- title: Prompt Engineering: How to Talk to the AIs
+- title: Python for Data Science Essential Training
+- title: Python for Data Science Tips, Tricks, & Techniques
+- title: Python: Data Analysis (2015)
+- title: Redefining PowerPoint in the College Classroom
+- title: Rhino: Modeling for 3D Printing
+- title: Sharepoint Server 2019 esencial
+- title: SQL Essential Training (2018)
+- title: Subnetting in Your Head
+- title: Succeeding as a First-Time Tech Manager
+- title: Teacher Tech Tips
+- title: Teacher Tips
+- title: Teaching Complex Topics
+- title: Teaching Online: Synchronous Classes
+- title: Teaching Techniques: Blended Learning
+- title: Teaching Techniques: Classroom Management
+- title: Teaching Techniques: Creating Effective Learning Assessments
+- title: Teaching Techniques: Creating Multimedia Learning
+- title: Teaching Techniques: Developing Curriculum
+- title: Teaching Techniques: Making Accessible Learning
+- title: Teaching Techniques: Project-Based Learning
+- title: Teaching with Technology
+- title: Transitioning from Technical Professional to Manager
+- title: Troubleshooting Microsoft Online Services (2018)
+- title: Understanding the Impact of Deepfake Videos
+- title: VMware vSphere: Configure and Manage Networking
+- title: Welcome to the "Building AI Products: Security Essentials" Professional Certificate
+- title: Windows 10: Despliegue con Microsoft Deployment kit
+- title: Windows Server 2012 R2 Active Directory: Implementación y gestión
+- title: Windows Server 2016: Implementing Group Policy
+- title: Windows Server 2019: DHCP and DNS
+- title: Windows Server 2022 First Look
+- title: Writing a Research Paper
+
+# Certificados / rutas de aprendizaje de LinkedIn Learning.
+learning_paths:
+- title: ServiceNow IT Leadership Professional Certificate
+- title: Advance Your Skills in Predictive Analytics
+- title: Building AI Products: Security Essentials Professional Certificate by LinkedIn Learning
+- title: Microsoft 365 Copilot Essentials Professional Certificate by Microsoft and LinkedIn

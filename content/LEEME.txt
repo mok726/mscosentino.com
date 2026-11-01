@@ -91,6 +91,14 @@ CUIDADOS
 * Guardá los archivos como UTF-8 (el Bloc de notas de Windows 10/11 ya lo hace).
 * Si algo está mal escrito, build.py avisa con el archivo y el número de línea.
 
+IMÁGENES
+--------
+Subí las fotos tal cual (JPG o PNG, no hace falta achicarlas ni convertirlas): al publicar,
+GitHub las pasa a WebP y las achica a 1600 px de ancho como máximo en la copia que va a Azure.
+Los originales quedan en el repositorio. Para ver el resultado en tu equipo:
+    pip install pillow
+    python tools/optimize_images.py site --out _dist     (deja la copia optimizada en _dist/)
+
 PUBLICAR LOS CAMBIOS
 --------------------
 Desde la carpeta del proyecto:

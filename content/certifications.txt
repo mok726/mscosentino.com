@@ -1,13 +1,13 @@
 # PÁGINA "CERTIFICACIONES".
 
 title: Certificaciones
-desc.es: Certificaciones Microsoft.
-desc.en: Microsoft certifications.
+desc.es: Certificaciones Microsoft y certificados de otras instituciones.
+desc.en: Microsoft certifications and certificates from other institutions.
 
 heading.es: Certificaciones
 heading.en: Certifications
-lead.es: Certificaciones Microsoft obtenidas a lo largo de mi carrera. Algunas corresponden a programas ya retirados.
-lead.en: Microsoft certifications earned throughout my career. Some belong to programs that have since been retired.
+lead.es: Certificaciones Microsoft obtenidas a lo largo de mi carrera (algunas corresponden a programas ya retirados) y certificados de otras instituciones.
+lead.en: Microsoft certifications earned throughout my career (some belong to programs that have since been retired) and certificates from other institutions.
 
 verify_url: https://mcp.microsoft.com/authenticate/validatemcp.aspx
 verify_text.es: Verificación en el sitio de Microsoft
@@ -119,3 +119,96 @@ certs:
 - name: Microsoft Certified Desktop Support Technician (MCDST)
   items:
   - Windows XP
+
+other_title.es: Otros certificados
+other_title.en: Other certificates
+
+# Certificados de otras instituciones (de la exportación de LinkedIn). Cada grupo es un desplegable.
+other_certs:
+- name: AXELOS
+  items:
+  - ITIL V3 Foundation Certified (2012)
+- name: Charles Sturt University
+  items:
+  - Digital Forensics - Short Course (2015)
+- name: ENACOM
+  items:
+  - Licencia de Radioaficionado (2021)
+- name: edX
+  items:
+  - Cyberwar, Surveillance and Security
+  - Querying with Transact-SQL (2016)
+  - Data Science Orientation
+  - Analyzing and Visualizing Data with Excel
+  - Principles of Machine Learning
+  - Introduction to R for Data Science
+  - DS101X: Statistical Thinking for Data Science and Analytics (2017)
+  - Ethics and Law in Data and Analytics (DAT249x) (2019)
+  - Essential Math for Machine Learning: Python Edition (DAT256x) (2019)
+  - Implementing Predictive Analytics with Spark in Azure HDInsight (DAT202.3x) (2019)
+  - Data Science Research Methods: Python Edition (DAT273x) (2019)
+  - Analytics Storytelling for Impact (DAT248x) (2019)
+  - Microsoft Professional Capstone : Data Science (DAT102x) (2019)
+- name: Coursera
+  items:
+  - Firm Level Economics: Consumer and Producer Behavior (2019)
+  - How Google does Machine Learning (2019)
+  - Launching into Machine Learning (2019)
+- name: University of Michigan
+  items:
+  - Applied Machine Learning in Python (2019)
+- name: Harvard Business Publishing
+  items:
+  - Budgeting (2016)
+  - Business Plan Development (2016)
+  - Finance Essentials (2016)
+  - Global Collaboration (2016)
+  - Innovation and Creativity (2016)
+  - Innovation Implementation (2016)
+  - Leading People (2016)
+  - Negotiating (2016)
+  - Presentation Skills (2016)
+  - Team Creation (2016)
+  - Writing Skills (2016)
+  - Leadership Essentials: Leading Change (2016)
+- name: Skillsoft
+  items:
+  - Managing Internal Dynamics in a Cross-functional Team (2016)
+  - Setting and Managing Priorities within the Organization: Communication (2016)
+  - Facilitating Collaborative Processes (2016)
+  - Business Execution: Monitoring and Evaluating Initiatives (2016)
+  - Managing Technical Professionals (2016)
+  - Leadership Essentials: Motivating Employees (2017)
+  - Overcoming Challenges when Managing Experts (2017)
+  - Strategies for Transitioning to Technical Management (2017)
+- name: AT&T
+  items:
+  - Cloud Bronce Certification (2016)
+  - Security First (2016)
+  - Security First - Silver (2016)
+  - Technology Delivery Platform - Bronze (2016)
+- name: World Scouting - LMS
+  items:
+  - Ciclo de vida de los Adultos en el Movimiento Scout - La vida de Alex (2024)
+  - SfH B: Curso para Listening Ears (ES) (2024)
+  - Sustainability E-learning (2024)
+  - Revise su programa para jóvenes con GPS (2024)
+  - A Journey to Growth (2024)
+  - Blended Learning (2024)
+  - Introduction to the Scout Method - ES (Introducción al Método Scout) (2024)
+  - Inducción a los ODS y el Marco Better World para consultores (2024)
+  - Introducción a las habilidades de consultoría (2024)
+  - Inducción de Asociaciones para Consultores (2024)
+  - Safe from Harm for first-responders in Humanitarian Action (2024)
+  - Safe from Harm Essential Learnings (2024)
+  - Introduction to the Adults in Scouting Life Cycle (2024)
+  - World Scouting Gender Equality e-learning (2026)
+- name: FAO
+  items:
+  - E-learning methodologies and good practices (2026)
+- name: PAHO Foundation
+  items:
+  - Protección y promoción de los derechos humanos en la respuesta en salud mental y apoyo psicosocial en emergencias (2026)
+- name: IFRC (Red Cross and Red Crescent)
+  items:
+  - Little Hearts, Big Feelings - Psychological First Aid for Children (2026)

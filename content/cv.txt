@@ -14,10 +14,16 @@ work_title.en: Work history
 education_title.es: Estudios
 education_title.en: Education
 education:
+- es: Universidad de Belgrano — Diplomatura en Internacionalización de la Educación Superior (2022)
+  en: Universidad de Belgrano — Diploma in Internationalization of Higher Education (2022)
+- es: Universidad de Belgrano — Diplomatura Internacional en Enseñanza Innovadora (2021)
+  en: Universidad de Belgrano — International Diploma in Innovative Teaching (2021)
+- es: Universidad de Belgrano — Diplomatura en Entornos Virtuales de Enseñanza (2020)
+  en: Universidad de Belgrano — Diploma in Virtual Teaching Environments (2020)
 - es: California Coast University — Master of Science in IT Management (desde 2008; Summa Cum Laude, 2014)
   en: California Coast University — Master of Science in IT Management (from 2008; Summa Cum Laude, 2014)
-- es: Universidad de Belgrano — Ingeniería en Computación (1994–1998)
-  en: Universidad de Belgrano — Computer Engineering (1994–1998)
+- es: Universidad de Belgrano — Ingeniero en Informática (1994–1998)
+  en: Universidad de Belgrano — Computer Engineer (1994–1998)
 - es: Universidad de Belgrano — Analista de Sistemas (1994–1997)
   en: Universidad de Belgrano — Systems Analyst (1994–1997)
 - es: Co.NET — Analista de Sistemas, programador BASIC y COBOL (1988–1990)
@@ -31,8 +37,37 @@ recognitions:
 - AT&T Believes Impact Award — Community Leader (2023, 2024, 2025)
 - AT&T Global Volunteer Award (2022)
 - Microsoft MCT 20th Anniversary Award (2019)
+- es: Charter Member — Microsoft Certified Solutions Expert: Cloud Platform and Infrastructure; Solutions Associate: Web Applications; Solutions Developer: App Builder (2016)
+  en: Charter Member — Microsoft Certified Solutions Expert: Cloud Platform and Infrastructure; Solutions Associate: Web Applications; Solutions Developer: App Builder (2016)
+- Charter Member — MCTS: Vista Configuration (2006)
+- Great Performers Team Award (2000)
+- Charter Member — MCSD (1999)
 
 languages_title.es: Idiomas
 languages_title.en: Languages
 languages.es: Español (nativo), inglés (bilingüe), italiano (básico).
 languages.en: Spanish (native), English (bilingual), Italian (basic).
+
+volunteer_title.es: Voluntariado
+volunteer_title.en: Volunteering
+volunteer:
+- es: Comunidad Scout-Guía “San Pablo” — asistente de liderazgo en la manada “Lobos Audaces”, desde 2021; antes, padre ayudante (2018–2021).
+  en: Scout-Guía “San Pablo” community — leadership assistant in the “Lobos Audaces” cub pack since 2021; before that, parent helper (2018–2021).
+- es: Microsoft — Proctor de los Hands-On Labs en Microsoft Ignite NA, Chicago (2015).
+  en: Microsoft — Hands-On Labs proctor at Microsoft Ignite NA, Chicago (2015).
+- es: Universidad de Belgrano — Asistente de laboratorio ad honorem en la Facultad de Tecnología Informática (1994–1997): administración de sistemas NT y UNIX, capacitación y soporte técnico.
+  en: Universidad de Belgrano — Ad-honorem laboratory assistant at the Faculty of Information Technology (1994–1997): NT and UNIX administration, training and technical support.
+
+orgs_title.es: Organizaciones profesionales
+orgs_title.en: Professional organizations
+orgs:
+- es: International Association of Microsoft Certified Trainers (IAMCT), desde 2005
+  en: International Association of Microsoft Certified Trainers (IAMCT), since 2005
+- es: Association for Computing Machinery (ACM), desde 2009
+  en: Association for Computing Machinery (ACM), since 2009
+- es: Computer Science Teachers Association (CSTA), desde 2009
+  en: Computer Science Teachers Association (CSTA), since 2009
+- es: International Web Association, desde 2000
+  en: International Web Association, since 2000
+- es: The HTML Writers Guild, desde 2000
+  en: The HTML Writers Guild, since 2000
